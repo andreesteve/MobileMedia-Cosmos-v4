@@ -1,14 +1,9 @@
 package br.unicamp.ic.sed.mobilemedia.mainuimidlet_exceptionhandler.impl;
-
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Vector;
-
-
 class Manager extends br.unicamp.ic.sed.cosmos.AManager{
-
 	private Hashtable reqInterfaceMap = new Hashtable();
-
 	public String[] getProvidedInterfaces(){
 	   Vector provInterfaceList = new Vector();
 	  provInterfaceList.addElement("IMobileResources");
@@ -23,7 +18,6 @@ class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 	}
 	
 	public Object getProvidedInterface(String name){
-
 	   if (name.equals("IMobileResources")){
 	   		return new IMobileResourcesAdapter();
 	   } 
@@ -38,7 +32,6 @@ class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 	public Object getRequiredInterface(String name){
 	   return reqInterfaceMap.get(name);
 	}
-
 	private String[] convertListToArray(Enumeration stringEnum){
 		Vector stringVector = new Vector();
 		for (Enumeration iter = stringEnum; iter.hasMoreElements();) {
@@ -52,7 +45,10 @@ class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 		}
 		return stringArray;
 	}
+public Manager()
+{
+    // provided interfaces
+
+    // required interfaces
 }
-
-
-
+}

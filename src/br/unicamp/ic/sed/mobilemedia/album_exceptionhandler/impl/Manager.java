@@ -1,18 +1,11 @@
 package br.unicamp.ic.sed.mobilemedia.album_exceptionhandler.impl;
-
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Vector;
-
 class Manager extends br.unicamp.ic.sed.cosmos.AManager{
-
 	Hashtable reqInterfaceMap = new Hashtable();
 	Hashtable provInterfaceMap = new Hashtable();
 	
-	
-	public Manager() {
-		provInterfaceMap.put("IExceptionHandler", new IAdapterAlbumEH());
-	}
 	
 	public String[] getProvidedInterfaces(){
 	   Vector provInterfaceList = new Vector();
@@ -39,7 +32,6 @@ class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 	public Object getRequiredInterface(String name){
 	   return reqInterfaceMap.get(name);
 	}
-
 	private String[] convertListToArray(Enumeration stringEnum){
 		Vector stringVector = new Vector();
 		for (Enumeration iter = stringEnum; iter.hasMoreElements();) {
@@ -53,7 +45,10 @@ class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 		}
 		return stringArray;
 	}
+public Manager()
+{
+    // provided interfaces
+
+    // required interfaces
 }
-
-
-
+}

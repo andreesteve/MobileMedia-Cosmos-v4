@@ -1,20 +1,20 @@
 package br.unicamp.ic.sed.mobilemedia.album.impl;
-
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Vector;
-
 import br.unicamp.ic.sed.cosmos.IManager;
-
+import br.unicamp.ic.sed.mobilemedia.album.spec.req.IExceptionHandler;
+import br.unicamp.ic.sed.mobilemedia.album.spec.req.IFilesystem;
+import br.unicamp.ic.sed.mobilemedia.album.spec.req.IMobilePhone;
+import br.unicamp.ic.sed.mobilemedia.album.spec.req.IMobileResources;
+import br.unicamp.ic.sed.mobilemedia.album.spec.req.IPhoto;
 class Manager extends br.unicamp.ic.sed.cosmos.AManager{
-
 	private Hashtable requiredInterfaces = new Hashtable();
 	private Hashtable providedInterfaces = new Hashtable();
 	
 	private IAlbumFacade facade;
 	
 	public Object getProvidedInterface(String name){
-
 	   if (name.equals("IAlbum")){
 		   if( facade == null )
 			   facade =  new IAlbumFacade( );
@@ -36,13 +36,10 @@ class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 		Enumeration keys = this.providedInterfaces.keys();
 		return this.convertEnumerationToArray(keys); 
 	}
-
-
 	public String[] getRequiredInterfaces() {
 		Enumeration keys = this.requiredInterfaces.keys();
 		return this.convertEnumerationToArray(keys);
 	}
-
 	
 	private String[] convertEnumerationToArray(Enumeration stringEnum){
 		Vector stringVector = new Vector();
@@ -50,14 +47,23 @@ class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 			String element = (String) iter.nextElement();
 			stringVector.addElement(element);
 		}
-
 		String[] stringArray = new String[stringVector.size()];
 		for (int i=0; i < stringVector.size(); i++){
 			stringArray[i] = (String) stringVector.elementAt(i);
 		}
 		return stringArray;
 	}
+public Manager()
+{
+    // provided interfaces
+    setProvidedInterface("IAlbum", new IAlbumFacade());
+
+    // required interfaces
+    setRequiredInterfaceType("ControllerInterface", ControllerInterface.class);
+    setRequiredInterfaceType("IExceptionHandler", IExceptionHandler.class);
+    setRequiredInterfaceType("IFilesystem", IFilesystem.class);
+    setRequiredInterfaceType("IMobilePhone", IMobilePhone.class);
+    setRequiredInterfaceType("IMobileResources", IMobileResources.class);
+    setRequiredInterfaceType("IPhoto", IPhoto.class);
 }
-
-
-
+}

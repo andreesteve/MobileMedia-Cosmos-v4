@@ -7,22 +7,19 @@
  * 
  */
 package br.unicamp.ic.sed.mobilemedia.photo.impl;
-
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Vector;
-
 import br.unicamp.ic.sed.cosmos.IManager;
-
+import br.unicamp.ic.sed.mobilemedia.photo.spec.req.IExceptionHandler;
+import br.unicamp.ic.sed.mobilemedia.photo.spec.req.IFilesystem;
+import br.unicamp.ic.sed.mobilemedia.photo.spec.req.IMobilePhone;
+import br.unicamp.ic.sed.mobilemedia.photo.spec.req.IMobileResources;
 class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 	
 	Hashtable requiredInterfaces = new Hashtable();
 	Hashtable providedInterfaces = new Hashtable();
-	
-	Manager(){
-		this.providedInterfaces.put("IPhoto", new IPhotoFacade());
-	}
-	
+
 	
 	private String[] convertEnumerationToArray(Enumeration stringEnum){
 		Vector stringVector = new Vector();
@@ -37,22 +34,17 @@ class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 		}
 		return stringArray;
 	}
-
-
 	
 	public String[] getProvidedInterfaces() {
 		Enumeration keys = this.providedInterfaces.keys();
 		return this.convertEnumerationToArray(keys); 
 	}
-
-
 	public String[] getRequiredInterfaces() {
 		Enumeration keys = this.requiredInterfaces.keys();
 		return this.convertEnumerationToArray(keys);
 	}
 	
 	public Object getProvidedInterface(String name){
-
 	  return this.providedInterfaces.get(name);
 	}
 	
@@ -65,7 +57,15 @@ class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 	}
 	
 	
+public Manager()
+{
+    // provided interfaces
+    setProvidedInterface("IPhoto", new IPhotoFacade());
+
+    // required interfaces
+    setRequiredInterfaceType("IExceptionHandler", IExceptionHandler.class);
+    setRequiredInterfaceType("IFilesystem", IFilesystem.class);
+    setRequiredInterfaceType("IMobilePhone", IMobilePhone.class);
+    setRequiredInterfaceType("IMobileResources", IMobileResources.class);
 }
-
-
-
+}

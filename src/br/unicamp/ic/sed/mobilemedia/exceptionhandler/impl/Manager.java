@@ -1,26 +1,12 @@
 package br.unicamp.ic.sed.mobilemedia.exceptionhandler.impl;
-
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Vector;
-
 import br.unicamp.ic.sed.cosmos.IManager;
-
-
-
-
+import br.unicamp.ic.sed.mobilemedia.exceptionhandler.spec.req.IMobileResources;
 class Manager extends br.unicamp.ic.sed.cosmos.AManager{
-
 	Hashtable providedInterfaces;
 	Hashtable requiredInterfaces;
-	
-	public Manager() {
-		providedInterfaces = new Hashtable();
-		requiredInterfaces = new Hashtable();
-		this.setProvidedInterface("IExceptionHandler", new IExceptionHandlerFacade());
-	}
-	
-		
 
 	
 	
@@ -37,25 +23,16 @@ class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 		}
 		return stringArray;
 	}
-
-
 	
 	public String[] getProvidedInterfaces() {
 		Enumeration keys = this.providedInterfaces.keys();
 		return this.convertEnumerationToArray(keys); 
 	}
-
-
 	public String[] getRequiredInterfaces() {
 		Enumeration keys = this.requiredInterfaces.keys();
 		return this.convertEnumerationToArray(keys);
 	}
-
-
-
 	
-
-
 	
 	
 	public Object getProvidedInterface(String name){
@@ -65,21 +42,20 @@ class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 	public Object getRequiredInterface(String name){
 		return this.requiredInterfaces.get(name);
 	}
-
 	public void setProvidedInterface(String name, Object facade){
 		this.providedInterfaces.put(name, facade);
 	}
-
 	public void setRequiredInterface(String name,Object facade){
 		this.requiredInterfaces.put(name, facade);
 	}
-
-
 	
-
-
 	
+public Manager()
+{
+    // provided interfaces
+    setProvidedInterface("IExceptionHandler", new IExceptionHandlerFacade());
+
+    // required interfaces
+    setRequiredInterfaceType("IMobileResources", IMobileResources.class);
 }
-
-
-
+}
