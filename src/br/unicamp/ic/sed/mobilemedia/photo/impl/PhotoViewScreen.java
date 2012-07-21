@@ -19,7 +19,7 @@ import lancs.mobilemedia.lib.exceptions.PersistenceMechanismException;
 /**
  * This screen displays a selected image.
  */
-public class PhotoViewScreen extends Canvas {
+ class PhotoViewScreen extends Canvas {
 	
 	Image image;
 	//AlbumData model = null;

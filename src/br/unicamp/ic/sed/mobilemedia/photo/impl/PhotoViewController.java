@@ -12,7 +12,6 @@ import javax.microedition.lcdui.Command;
 import javax.microedition.lcdui.Display;
 import javax.microedition.midlet.MIDlet;
 
-import br.unicamp.ic.sed.mobilemedia.main.spec.prov.IImageData;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.dt.Constants;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.ImageNotFoundException;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.InvalidImageDataException;
@@ -21,6 +20,7 @@ import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.PersistenceMechanismExcept
 import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.UnavailablePhotoAlbumException;
 import br.unicamp.ic.sed.cosmos.IManager;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.req.IFilesystem;
+import br.unicamp.ic.sed.mobilemedia.shared.datatypes.IImageData;
 
 
 
@@ -119,7 +119,7 @@ class PhotoViewController extends AbstractController {
 		String albumName = addPhotoToAlbum.getPath();
 		System.out.println("[PhotoViewController.savePhoto] albumName = "+albumName);
 		
-		imageData.setImageLabel( photoName );
+		//imageData.setImageLabel( photoName );
 		
 		filesystem.addImageData(photoName, imageData, albumName);
 		

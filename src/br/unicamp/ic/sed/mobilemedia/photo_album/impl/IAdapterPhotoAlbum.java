@@ -4,7 +4,7 @@ import javax.microedition.lcdui.Command;
 
 import br.unicamp.ic.sed.mobilemedia.album.spec.req.IPhoto;
 
-public class IAdapterPhotoAlbum implements IPhoto {
+ class IAdapterPhotoAlbum implements IPhoto {
 
 	public boolean postCommand(Command c) {
 		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();

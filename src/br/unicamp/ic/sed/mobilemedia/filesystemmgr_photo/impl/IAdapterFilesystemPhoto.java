@@ -7,11 +7,11 @@ import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.InvalidImageDataEx
 import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.NullAlbumDataReference;
 import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.PersistenceMechanismException;
 import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.UnavailablePhotoAlbumException;
-import br.unicamp.ic.sed.mobilemedia.main.spec.prov.IImageData;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.req.IFilesystem;
+import br.unicamp.ic.sed.mobilemedia.shared.datatypes.IImageData;
 
 
-public class IAdapterFilesystemPhoto implements IFilesystem {
+ class IAdapterFilesystemPhoto implements IFilesystem {
 
 	//#ifdef includeCopyPhoto
 	public void addImageData(String photoName, IImageData imageData, String albumName) 

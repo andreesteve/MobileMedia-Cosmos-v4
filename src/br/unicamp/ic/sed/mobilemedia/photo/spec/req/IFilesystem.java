@@ -4,12 +4,12 @@ import javax.microedition.lcdui.Image;
 
 
 
-import br.unicamp.ic.sed.mobilemedia.main.spec.prov.IImageData;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.ImageNotFoundException;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.InvalidImageDataException;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.NullAlbumDataReference;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.PersistenceMechanismException;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.UnavailablePhotoAlbumException;
+import br.unicamp.ic.sed.mobilemedia.shared.datatypes.IImageData;
 
 /**
  * In MobileMedia-Cosmos-v4, it was exchanged the usage of the datatype ImageData by the interface IImageData

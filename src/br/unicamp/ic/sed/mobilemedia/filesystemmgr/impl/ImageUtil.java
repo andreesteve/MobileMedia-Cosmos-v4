@@ -9,7 +9,7 @@ import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.ImagePathNotValidE
 import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.InvalidArrayFormatException;
 import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.InvalidImageDataException;
 import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.InvalidImageFormatException;
-import br.unicamp.ic.sed.mobilemedia.main.spec.prov.IImageData;
+import br.unicamp.ic.sed.mobilemedia.shared.datatypes.IImageData;
 
 
 /**
@@ -18,7 +18,7 @@ import br.unicamp.ic.sed.mobilemedia.main.spec.prov.IImageData;
  *         Byte arrays are the main format for storing data in RMS, and for
  *         sending data over the wire.
  */
-public class ImageUtil {
+ class ImageUtil {
 
 	// Delimiter used in record store data to separate fields in a string.
 	private static final String DELIMITER = "*";
@@ -229,7 +229,7 @@ public class ImageUtil {
 			// #ifdef includeFavourites
 			// [EF] Added in scenario 03
 			byteString = byteString.concat(DELIMITER);
-			if (ii.isFavorite()) byteString = byteString.concat("true");
+			if (ii.getIsFavorite()) byteString = byteString.concat("true");
 			else byteString = byteString.concat("false");
 			// #endif
 

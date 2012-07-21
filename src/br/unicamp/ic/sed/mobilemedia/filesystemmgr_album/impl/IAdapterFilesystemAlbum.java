@@ -5,7 +5,7 @@ import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.InvalidPhotoAlbumN
 import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.PersistenceMechanismException;
 
 
-public class IAdapterFilesystemAlbum implements IFilesystem {
+ class IAdapterFilesystemAlbum implements IFilesystem {
 
 
 	public void createNewPhotoAlbum(String albumName) throws br.unicamp.ic.sed.mobilemedia.album.spec.excep.InvalidPhotoAlbumNameException, br.unicamp.ic.sed.mobilemedia.album.spec.excep.PersistenceMechanismException {

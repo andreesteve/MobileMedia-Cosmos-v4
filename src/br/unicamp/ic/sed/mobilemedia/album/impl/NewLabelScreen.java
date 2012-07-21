@@ -12,7 +12,7 @@ import javax.microedition.lcdui.TextField;
  * a new album, but currently it just creates a hard-coded album name for testing.
  *
  */
-public class NewLabelScreen extends Form {
+ class NewLabelScreen extends Form {
 	
 	public static final int NEW_ALBUM = 0;
 	public static final int LABEL_PHOTO = 1; 

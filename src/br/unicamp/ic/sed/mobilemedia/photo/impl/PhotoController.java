@@ -14,7 +14,6 @@ import javax.microedition.lcdui.Image;
 import javax.microedition.lcdui.List;
 import javax.microedition.midlet.MIDlet;
 
-import br.unicamp.ic.sed.mobilemedia.main.spec.prov.IImageData;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.dt.Constants;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.ImageNotFoundException;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.InvalidImageDataException;
@@ -23,6 +22,7 @@ import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.PersistenceMechanismExcept
 import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.UnavailablePhotoAlbumException;
 import br.unicamp.ic.sed.cosmos.IManager;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.req.IFilesystem;
+import br.unicamp.ic.sed.mobilemedia.shared.datatypes.IImageData;
 
 
 
@@ -145,7 +145,7 @@ class PhotoController extends PhotoListController {
 			
 			image = filesystem.getImageInfo(selectedImageName);
 			
-			image.increaseNumberOfViews();
+			//image.increaseNumberOfViews();
 			this.updateImage(image);
 
 			// #endif
@@ -211,9 +211,9 @@ class PhotoController extends PhotoListController {
 			
 				//ImageData image = getAlbumData().getImageInfo(selectedImageName);
 				IImageData image = filesystem.getImageInfo(selectedImageName);
-				image.toggleFavorite();
+				//image.toggleFavorite();
 				updateImage(image);
-				System.out.println("<* BaseController.handleCommand() *> Image = "+ selectedImageName + "; Favorite = " + image.isFavorite());
+				System.out.println("<* BaseController.handleCommand() *> Image = "+ selectedImageName + "; Favorite = " + image.getIsFavorite());
 			
 			return true;
 
@@ -232,7 +232,7 @@ class PhotoController extends PhotoListController {
 			NewLabelScreen newLabelScreen = this.getScreen();
 			String labelName = newLabelScreen.getLabelName();
 			System.out.println("<* PhotoController.handleCommand() *> Save Photo Label = "+ labelName);
-			this.getImage().setImageLabel( labelName );
+			//this.getImage().setImageLabel( labelName );
 			this.updateImage(image);
 			return this.goToPreviousScreen();
 

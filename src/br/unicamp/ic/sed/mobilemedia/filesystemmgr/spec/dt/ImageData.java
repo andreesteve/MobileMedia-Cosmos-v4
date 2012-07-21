@@ -15,7 +15,7 @@ package br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.dt;
  * etc.
  * 
  */
-public class ImageData implements br.unicamp.ic.sed.mobilemedia.main.spec.prov.IImageData{
+public class ImageData implements br.unicamp.ic.sed.mobilemedia.shared.datatypes.IImageData{
 	
 	private int recordId; //imageData recordId 
 	private int foreignRecordId; //image recordId
@@ -150,4 +150,22 @@ public class ImageData implements br.unicamp.ic.sed.mobilemedia.main.spec.prov.I
 		this.numberOfViews = views;
 	}
 	// #endif	
+
+	@Override
+	public void getToggleFavorite() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean getIsFavorite() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void getIncreaseNumberOfViews() {
+		// TODO Auto-generated method stub
+		
+	}
 }

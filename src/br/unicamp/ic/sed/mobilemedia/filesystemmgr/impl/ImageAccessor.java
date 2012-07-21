@@ -25,7 +25,7 @@ import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.InvalidImageFormat
 import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.InvalidPhotoAlbumNameException;
 import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.NullAlbumDataReference;
 import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.PersistenceMechanismException;
-import br.unicamp.ic.sed.mobilemedia.main.spec.prov.IImageData;
+import br.unicamp.ic.sed.mobilemedia.shared.datatypes.IImageData;
 
 /**
  * @author trevor
@@ -39,7 +39,7 @@ import br.unicamp.ic.sed.mobilemedia.main.spec.prov.IImageData;
  */
 
 
-public class ImageAccessor {
+ class ImageAccessor {
 
 	// Note: Our midlet only ever has access to Record Stores it created
 	// For now, use naming convention to create record stores used by
@@ -90,7 +90,7 @@ public class ImageAccessor {
 			int rid2; // new record ID for ImageData (metadata)
 			ImageUtil converter = new ImageUtil();
 			rid2 = imageInfoRS.getNextRecordID();
-			imageData.setRecordId(rid2);
+			//imageData.setRecordId(rid2);
 			System.out.println("[ImageAccessor.addImageData] imageLabel="+imageData.getImageLabel()+" parentAlbumName="+imageData.getParentAlbumName());
 			byte[] data1 = converter.getBytesFromImageInfo(imageData);
 			imageInfoRS.addRecord(data1, 0, data1.length);

@@ -28,7 +28,7 @@ import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.UnavailablePhotoAlbumExcep
  * If handleCommand returns false, then postCommand will attempt to call the next controller
  * in the chain, if one exists.
  */
-public interface ControllerInterface {
+ interface ControllerInterface {
 
     public boolean postCommand(Command command);
 	

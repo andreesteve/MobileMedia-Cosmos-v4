@@ -17,7 +17,7 @@ import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.NullAlbumDataRefer
 import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.PersistenceMechanismException;
 import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.UnavailablePhotoAlbumException;
 import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IFilesystem;
-import br.unicamp.ic.sed.mobilemedia.main.spec.prov.IImageData;
+import br.unicamp.ic.sed.mobilemedia.shared.datatypes.IImageData;
 
 class IFilesystemFacade implements IFilesystem{
 

@@ -18,7 +18,7 @@ import javax.microedition.midlet.MIDlet;
 
 //import br.unicamp.ic.sed.mobilemedia.album.impl.AlbumListScreen;
 
-public abstract class AbstractController implements CommandListener, ControllerInterface {
+ abstract class AbstractController implements CommandListener, ControllerInterface {
 
 	private MIDlet midlet;
 	

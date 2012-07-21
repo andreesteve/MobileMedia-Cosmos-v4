@@ -4,7 +4,7 @@
  */
 package br.unicamp.ic.sed.mobilemedia.mobilephonemgr.spec.dt;
 
-import br.unicamp.ic.sed.mobilemedia.main.spec.prov.IImageData;
+import br.unicamp.ic.sed.mobilemedia.shared.datatypes.IImageData;
 
 /**
  * @author trevor
@@ -152,4 +152,22 @@ public class ImageData implements IImageData{
 		this.numberOfViews = views;
 	}
 	// #endif	
+
+	@Override
+	public void getToggleFavorite() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean getIsFavorite() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void getIncreaseNumberOfViews() {
+		// TODO Auto-generated method stub
+		
+	}
 }

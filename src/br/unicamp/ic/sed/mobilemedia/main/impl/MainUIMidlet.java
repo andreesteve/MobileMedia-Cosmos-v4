@@ -28,7 +28,7 @@ import br.unicamp.ic.sed.mobilemedia.mobilephonemgr.spec.req.IAlbum;
  * This Application provides a basic Photo Album interface that allows a user to view
  * images on their mobile device. 
  * */
-public class MainUIMidlet extends MIDlet implements IMobileResources {
+ class MainUIMidlet extends MIDlet implements IMobileResources {
 
 	//components
 	br.unicamp.ic.sed.cosmos.IManager album;

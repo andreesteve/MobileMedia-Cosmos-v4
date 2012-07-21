@@ -5,7 +5,7 @@ import javax.microedition.midlet.MIDlet;
 
 import br.unicamp.ic.sed.mobilemedia.mobilephonemgr.spec.req.IMobileResources;
 
-public class IAdapterMobilePhoneMgrMainMidlet implements IMobileResources {
+ class IAdapterMobilePhoneMgrMainMidlet implements IMobileResources {
 
 	private br.unicamp.ic.sed.cosmos.IManager manager;
 	

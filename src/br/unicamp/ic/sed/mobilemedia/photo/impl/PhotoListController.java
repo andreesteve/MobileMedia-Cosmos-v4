@@ -13,7 +13,6 @@ import javax.microedition.lcdui.Display;
 import javax.microedition.lcdui.List;
 import javax.microedition.midlet.MIDlet;
 
-import br.unicamp.ic.sed.mobilemedia.main.spec.prov.IImageData;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.req.IFilesystem;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.dt.Constants;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.ImageNotFoundException;
@@ -21,6 +20,7 @@ import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.InvalidImageDataException;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.NullAlbumDataReference;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.PersistenceMechanismException;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.UnavailablePhotoAlbumException;
+import br.unicamp.ic.sed.mobilemedia.shared.datatypes.IImageData;
 import br.unicamp.ic.sed.cosmos.IManager;
 
 
@@ -161,7 +161,7 @@ class PhotoListController extends AbstractController {
 				// #ifdef includeFavourites
 				// [EF] Check if favorite is true (Add in the Scenario 03)
 				if (favorite) {
-					if (images[i].isFavorite())
+					if (images[i].getIsFavorite())
 						photoListScreen.append(imageLabel, null);
 				}
 				else 

@@ -20,7 +20,7 @@ import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.InvalidPhotoAlbumN
 import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.NullAlbumDataReference;
 import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.PersistenceMechanismException;
 import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.UnavailablePhotoAlbumException;
-import br.unicamp.ic.sed.mobilemedia.main.spec.prov.IImageData;
+import br.unicamp.ic.sed.mobilemedia.shared.datatypes.IImageData;
 
 /**
  * @author tyoung

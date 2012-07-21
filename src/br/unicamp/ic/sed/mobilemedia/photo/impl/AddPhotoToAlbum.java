@@ -5,7 +5,7 @@ import javax.microedition.lcdui.Command;
 import javax.microedition.lcdui.Form;
 import javax.microedition.lcdui.TextField;
 
-public class AddPhotoToAlbum extends Form {
+ class AddPhotoToAlbum extends Form {
 	
 	TextField labeltxt = new TextField("Photo label", "", 15, TextField.ANY);
 	TextField photopathtxt = new TextField("Path", "", 20, TextField.ANY);

@@ -13,5 +13,6 @@
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>br.unicamp.ic.sed.meissa.meissaNature</nature>
 	</natures>
 </projectDescription>

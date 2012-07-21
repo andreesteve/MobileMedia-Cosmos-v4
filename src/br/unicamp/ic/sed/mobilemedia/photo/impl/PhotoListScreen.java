@@ -19,7 +19,7 @@ import javax.microedition.lcdui.List;
  * send photos to other users etc.
  * 
  */
-public class PhotoListScreen extends List {
+ class PhotoListScreen extends List {
 	
 	//Add the core application commands always
 	public static final Command viewCommand = new Command("View", Command.ITEM, 1);
