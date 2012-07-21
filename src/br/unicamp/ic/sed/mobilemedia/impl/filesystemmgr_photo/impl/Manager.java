@@ -49,6 +49,6 @@ public Manager()
     // provided interfaces
 	setProvidedInterface("IFilesystem", new IAdapterFilesystemPhoto());
     // required interfaces
-	setRequiredInterface("IFilesystem", br.unicamp.ic.sed.mobilemedia.impl.filesystemmgr.spec.prov.IFilesystem.class);
+	setRequiredInterfaceType("IFilesystem", br.unicamp.ic.sed.mobilemedia.impl.filesystemmgr.spec.prov.IFilesystem.class);
 }
 }

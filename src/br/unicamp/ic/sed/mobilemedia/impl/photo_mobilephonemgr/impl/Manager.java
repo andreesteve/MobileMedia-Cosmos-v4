@@ -6,7 +6,8 @@ class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 	public Manager() {
 		setProvidedInterface("IPhoto", new IPhotoAdapter());
 		setProvidedInterface("IMobilePhone", new IMobilePhoneAdapter());
-		setRequiredInterface("IPhoto", br.unicamp.ic.sed.mobilemedia.impl.photo.spec.prov.IPhoto.class);
+		setRequiredInterfaceType("IPhoto", br.unicamp.ic.sed.mobilemedia.impl.photo.spec.prov.IPhoto.class);
+		setRequiredInterfaceType("IMobilePhone", br.unicamp.ic.sed.mobilemedia.impl.mobilephonemgr.spec.prov.IMobilePhone.class);
 	}
 	
 	public Object getProvidedInterface(String name){

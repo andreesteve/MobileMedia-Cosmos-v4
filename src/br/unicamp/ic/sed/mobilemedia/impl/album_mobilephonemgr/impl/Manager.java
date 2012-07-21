@@ -51,8 +51,9 @@ class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 public Manager()
 {
     // provided interfaces
-
+	setProvidedInterface("IAlbum", new IAlbumAdapter(this));
     // required interfaces
-	setRequiredInterface("IAlbum", br.unicamp.ic.sed.mobilemedia.impl.album.spec.prov.IAlbum.class);	
+	setRequiredInterfaceType("IAlbum", br.unicamp.ic.sed.mobilemedia.impl.album.spec.prov.IAlbum.class);
+	setRequiredInterfaceType("IMobilePhone", br.unicamp.ic.sed.mobilemedia.impl.mobilephonemgr.spec.prov.IMobilePhone.class);
 }
 }

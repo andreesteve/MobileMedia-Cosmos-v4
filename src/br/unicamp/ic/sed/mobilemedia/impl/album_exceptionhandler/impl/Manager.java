@@ -50,6 +50,6 @@ public Manager()
     // provided interfaces
 	setProvidedInterface("IExceptionHandler", new IAdapterAlbumEH());
     // required interfaces
-	setRequiredInterface("IExceptionHandler", br.unicamp.ic.sed.mobilemedia.impl.exceptionhandler.spec.prov.IExceptionHandler.class);
+	setRequiredInterfaceType("IExceptionHandler", br.unicamp.ic.sed.mobilemedia.impl.exceptionhandler.spec.prov.IExceptionHandler.class);
 }
 }

@@ -70,13 +70,10 @@ class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 		System.out.println("step 0.3");
 		
 		
-		br.unicamp.ic.sed.mobilemedia.impl.mobilephonemgr.spec.req.IAlbum ialbum = (IAlbum) album_mobilePhone.getProvidedInterface("IAlbum");
-		
-		
 		System.out.println("step 0.4");
 		
 		
-		mobilePhone.setRequiredInterface("IAlbum", ialbum );
+		mobilePhone.setRequiredInterface("IAlbum", album_mobilePhone.getProvidedInterface("IAlbum") );
 		
 		
 		System.out.println("step 1");

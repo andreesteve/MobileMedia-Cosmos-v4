@@ -48,6 +48,6 @@ public Manager()
     // provided interfaces
 	setProvidedInterface("IPhoto", new IAdapterPhotoAlbum());
     // required interfaces
-	setRequiredInterface("IPhoto", br.unicamp.ic.sed.mobilemedia.impl.photo.spec.prov.IPhoto.class);
+	setRequiredInterfaceType("IPhoto", br.unicamp.ic.sed.mobilemedia.impl.photo.spec.prov.IPhoto.class);
 }
 }

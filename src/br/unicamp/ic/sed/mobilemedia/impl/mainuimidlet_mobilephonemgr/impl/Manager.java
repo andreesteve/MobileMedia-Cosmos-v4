@@ -6,7 +6,7 @@ class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 	Manager(){
 		setProvidedInterface("IMobileResources", new IAdapterMobilePhoneMgrMainMidlet(this));
 		
-		setRequiredInterface("IMobileResources", br.unicamp.ic.sed.mobilemedia.impl.main.spec.prov.IMobileResources.class);
+		setRequiredInterfaceType("IMobileResources", br.unicamp.ic.sed.mobilemedia.impl.main.spec.prov.IMobileResources.class);
 	}
 	
 	public String[] getProvidedInterfaces(){

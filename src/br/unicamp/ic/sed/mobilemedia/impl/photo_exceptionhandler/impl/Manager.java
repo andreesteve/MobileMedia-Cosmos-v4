@@ -10,7 +10,7 @@ class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 	public Manager() {		
 		setProvidedInterface("IExceptionHandler", new IAdapterPhotoEH());
 		
-		setRequiredInterface("IExceptionHandler", br.unicamp.ic.sed.mobilemedia.impl.exceptionhandler.spec.prov.IExceptionHandler.class);
+		setRequiredInterfaceType("IExceptionHandler", br.unicamp.ic.sed.mobilemedia.impl.exceptionhandler.spec.prov.IExceptionHandler.class);
 	}
 	
 	public String[] getProvidedInterfaces(){

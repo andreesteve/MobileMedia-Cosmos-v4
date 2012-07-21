@@ -48,6 +48,6 @@ public Manager()
     // provided interfaces
 	setProvidedInterface("IMobileResources", new IMobileResourcesAdapter());
     // required interfaces
-	setRequiredInterface("IMobileResources", br.unicamp.ic.sed.mobilemedia.impl.main.spec.prov.IMobileResources.class);
+	setRequiredInterfaceType("IMobileResources", br.unicamp.ic.sed.mobilemedia.impl.main.spec.prov.IMobileResources.class);
 }
 }
