@@ -3,6 +3,7 @@ import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Vector;
 import br.unicamp.ic.sed.cosmos.IManager;
+import br.unicamp.ic.sed.mobilemedia.album.spec.req.ControllerInterface;
 import br.unicamp.ic.sed.mobilemedia.album.spec.req.IExceptionHandler;
 import br.unicamp.ic.sed.mobilemedia.album.spec.req.IFilesystem;
 import br.unicamp.ic.sed.mobilemedia.album.spec.req.IMobilePhone;
