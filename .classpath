@@ -4,7 +4,7 @@
 	<classpathentry kind="lib" path="jars/ajrt_j2me_obfuscated.jar"/>
 	<classpathentry kind="lib" path="jars/antenna-bin-1.1.0-beta.jar"/>
 	<classpathentry kind="lib" path="jars/aspectjtools.jar"/>
-	<classpathentry kind="lib" path="jars/MobileMedia.jar"/>
+	<classpathentry kind="lib" path="jars/cosmos.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/usr/lib/jvm/wtk2.5.2/lib/cldcapi10.jar"/>
 	<classpathentry kind="lib" path="/usr/lib/jvm/wtk2.5.2/lib/cldcapi11.jar"/>
