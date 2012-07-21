@@ -8,7 +8,7 @@
  */
 package br.unicamp.ic.sed.mobilemedia.filesystemmgr.impl;
 
-import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IManager;
+import br.unicamp.ic.sed.cosmos.IManager;
 
 public class ComponentFactory {
 

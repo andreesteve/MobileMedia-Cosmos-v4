@@ -11,7 +11,7 @@ package br.unicamp.ic.sed.mobilemedia.album.impl;
 import javax.microedition.midlet.MIDlet;
 
 import br.unicamp.ic.sed.mobilemedia.album.spec.prov.IAlbum;
-import br.unicamp.ic.sed.mobilemedia.album.spec.prov.IManager;
+import br.unicamp.ic.sed.cosmos.IManager;
 import br.unicamp.ic.sed.mobilemedia.album.spec.req.IFilesystem;
 import br.unicamp.ic.sed.mobilemedia.album.spec.req.IMobileResources;
 

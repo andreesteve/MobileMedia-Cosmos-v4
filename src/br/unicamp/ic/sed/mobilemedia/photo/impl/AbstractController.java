@@ -22,7 +22,7 @@ import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.NullAlbumDataReference;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.PersistenceMechanismException;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.excep.UnavailablePhotoAlbumException;
 
-import br.unicamp.ic.sed.mobilemedia.photo.spec.prov.IManager;
+import br.unicamp.ic.sed.cosmos.IManager;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.req.IMobilePhone;
 
 //import br.unicamp.ic.sed.mobilemedia.album.impl.AlbumListScreen;

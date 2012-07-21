@@ -31,25 +31,25 @@ import br.unicamp.ic.sed.mobilemedia.mobilephonemgr.spec.req.IAlbum;
 public class MainUIMidlet extends MIDlet implements IMobileResources {
 
 	//components
-	br.unicamp.ic.sed.mobilemedia.album.spec.prov.IManager album;
-	br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IManager filesystem;
-	br.unicamp.ic.sed.mobilemedia.photo.spec.prov.IManager photo;
-	br.unicamp.ic.sed.mobilemedia.mobilephonemgr.spec.prov.IManager mobilePhone;
-	br.unicamp.ic.sed.mobilemedia.exceptionhandler.spec.prov.IManager exceptionHandler;
+	br.unicamp.ic.sed.cosmos.IManager album;
+	br.unicamp.ic.sed.cosmos.IManager filesystem;
+	br.unicamp.ic.sed.cosmos.IManager photo;
+	br.unicamp.ic.sed.cosmos.IManager mobilePhone;
+	br.unicamp.ic.sed.cosmos.IManager exceptionHandler;
 
 	//connectors
-	br.unicamp.ic.sed.mobilemedia.album_mobilephonemgr.impl.IManager album_mobilePhone;
-//	br.unicamp.ic.sed.mobilemedia.filesystemmgr_mobilephonemgr.impl.IManager filesystem_mobilePhone;
-	br.unicamp.ic.sed.mobilemedia.photo_mobilephonemgr.impl.IManager photo_mobilePhone;
-	br.unicamp.ic.sed.mobilemedia.mainuimidlet_album.impl.IManager mainMidlet_album;
-	br.unicamp.ic.sed.mobilemedia.mainuimidlet_photo.impl.IManager mainMidlet_photo;
-	br.unicamp.ic.sed.mobilemedia.mainuimidlet_mobilephonemgr.impl.IManager mainMidlet_mobilePhone;
-	br.unicamp.ic.sed.mobilemedia.filesystemmgr_album.impl.IManager filesystemmgr_album;
-	br.unicamp.ic.sed.mobilemedia.filesystemmgr_photo.impl.IManager filesystemmgr_photo;
-	br.unicamp.ic.sed.mobilemedia.photo_album.impl.IManager photo_album;
-	br.unicamp.ic.sed.mobilemedia.mainuimidlet_exceptionhandler.impl.IManager mainMidlet_exceptionHandler;
-	br.unicamp.ic.sed.mobilemedia.album_exceptionhandler.impl.IManager album_exceptionhandler;
-	br.unicamp.ic.sed.mobilemedia.photo_exceptionhandler.impl.IManager photo_exceptionhandler; 
+	br.unicamp.ic.sed.cosmos.IManager album_mobilePhone;
+//	br.unicamp.ic.sed.cosmos.IManager filesystem_mobilePhone;
+	br.unicamp.ic.sed.cosmos.IManager photo_mobilePhone;
+	br.unicamp.ic.sed.cosmos.IManager mainMidlet_album;
+	br.unicamp.ic.sed.cosmos.IManager mainMidlet_photo;
+	br.unicamp.ic.sed.cosmos.IManager mainMidlet_mobilePhone;
+	br.unicamp.ic.sed.cosmos.IManager filesystemmgr_album;
+	br.unicamp.ic.sed.cosmos.IManager filesystemmgr_photo;
+	br.unicamp.ic.sed.cosmos.IManager photo_album;
+	br.unicamp.ic.sed.cosmos.IManager mainMidlet_exceptionHandler;
+	br.unicamp.ic.sed.cosmos.IManager album_exceptionhandler;
+	br.unicamp.ic.sed.cosmos.IManager photo_exceptionhandler; 
 
 	public MainUIMidlet() {
 		//do nothing

@@ -1,7 +1,7 @@
 package br.unicamp.ic.sed.mobilemedia.mainuimidlet_album.impl;
 
 
-import br.unicamp.ic.sed.mobilemedia.mainuimidlet_album.impl.IManager;
+import br.unicamp.ic.sed.cosmos.IManager;
 
 public class ComponentFactory {
 

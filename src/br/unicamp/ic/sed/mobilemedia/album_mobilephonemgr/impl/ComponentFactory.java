@@ -1,6 +1,6 @@
 package br.unicamp.ic.sed.mobilemedia.album_mobilephonemgr.impl;
 
-import br.unicamp.ic.sed.mobilemedia.album_mobilephonemgr.impl.IManager;
+import br.unicamp.ic.sed.cosmos.IManager;
 
 public class ComponentFactory {
 

@@ -13,7 +13,7 @@ import javax.microedition.midlet.MIDlet;
 
 import br.unicamp.ic.sed.mobilemedia.mobilephonemgr.spec.prov.IMobilePhone;
 import br.unicamp.ic.sed.mobilemedia.mobilephonemgr.spec.req.IMobileResources;
-import br.unicamp.ic.sed.mobilemedia.mobilephonemgr.spec.prov.IManager;
+import br.unicamp.ic.sed.cosmos.IManager;
 
 class IMobilePhoneMgrFacade implements IMobilePhone{
 

@@ -1,6 +1,6 @@
 package br.unicamp.ic.sed.mobilemedia.exceptionhandler.impl;
 
-import br.unicamp.ic.sed.mobilemedia.exceptionhandler.spec.prov.IManager;
+import br.unicamp.ic.sed.cosmos.IManager;
 
 
 

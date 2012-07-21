@@ -13,7 +13,7 @@ import java.util.Hashtable;
 import java.util.Vector;
 
 
-import br.unicamp.ic.sed.mobilemedia.mobilephonemgr.spec.prov.IManager;
+import br.unicamp.ic.sed.cosmos.IManager;
 
 class Manager  implements IManager{
 

@@ -8,7 +8,7 @@
  */
 package br.unicamp.ic.sed.mobilemedia.mobilephonemgr.impl;
 
-import br.unicamp.ic.sed.mobilemedia.mobilephonemgr.spec.prov.IManager;
+import br.unicamp.ic.sed.cosmos.IManager;
 
 
 public class ComponentFactory {

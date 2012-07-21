@@ -4,7 +4,7 @@ package br.unicamp.ic.sed.mobilemedia.photo.impl;
 import javax.microedition.lcdui.Command;
 import javax.microedition.midlet.MIDlet;
 
-import br.unicamp.ic.sed.mobilemedia.photo.spec.prov.IManager;
+import br.unicamp.ic.sed.cosmos.IManager;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.prov.IPhoto;
 import br.unicamp.ic.sed.mobilemedia.photo.spec.req.IMobileResources;
 
