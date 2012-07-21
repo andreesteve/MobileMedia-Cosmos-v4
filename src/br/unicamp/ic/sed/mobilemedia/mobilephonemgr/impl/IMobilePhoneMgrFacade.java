@@ -36,7 +36,7 @@ class IMobilePhoneMgrFacade implements IMobilePhone{
 
 	public void startUp() {
 
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 
 		IMobileResources mobileResources = (IMobileResources) manager.getRequiredInterface("IMobileResources");
 

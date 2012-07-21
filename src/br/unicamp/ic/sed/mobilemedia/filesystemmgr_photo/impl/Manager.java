@@ -2,7 +2,7 @@ package br.unicamp.ic.sed.mobilemedia.filesystemmgr_photo.impl;
 
 import java.util.*;
 
-class Manager implements IManager{
+class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 
 	Hashtable reqInterfaceMap = new Hashtable();
 

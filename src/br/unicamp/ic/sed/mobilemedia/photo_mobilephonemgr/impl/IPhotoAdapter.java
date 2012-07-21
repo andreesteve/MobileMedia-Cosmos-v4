@@ -10,7 +10,7 @@ import br.unicamp.ic.sed.mobilemedia.mobilephonemgr.spec.req.IPhoto;
 class IPhotoAdapter implements IPhoto{
 
 	public boolean postCommand(Command c) {
-		IManager mgr = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager mgr = ComponentFactory.createInstance();
 		IPhoto photo = (IPhoto) mgr.getRequiredInterface("IPhoto");
 		return photo.postCommand(c);
 	}

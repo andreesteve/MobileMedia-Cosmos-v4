@@ -4,7 +4,7 @@ import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Vector;
 
-class Manager implements IManager{
+class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 
 	Hashtable requiredInterfaces = new Hashtable();
 	Hashtable providedInterfaces = new Hashtable();

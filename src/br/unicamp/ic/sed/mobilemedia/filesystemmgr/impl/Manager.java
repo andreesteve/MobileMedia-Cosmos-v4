@@ -6,7 +6,7 @@ import java.util.Vector;
 
 import br.unicamp.ic.sed.cosmos.IManager;
 
-class Manager implements IManager{
+class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 
 	Hashtable requiredInterfaces = new Hashtable();
 	Hashtable providedInterfaces = new Hashtable();

@@ -110,7 +110,7 @@ class PhotoListController extends AbstractController {
 			recordName = getCurrentStoreName();
 
 		/*begin - modified in MobileMedia-Cosmos-OO-v4*/
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 
 		PhotoController photoController = this.getPhotoController();
 

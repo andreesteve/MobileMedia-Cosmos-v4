@@ -7,9 +7,9 @@ import br.unicamp.ic.sed.mobilemedia.mobilephonemgr.spec.req.IMobileResources;
 
 public class IAdapterMobilePhoneMgrMainMidlet implements IMobileResources {
 
-	private IManager manager;
+	private br.unicamp.ic.sed.cosmos.IManager manager;
 	
-	IAdapterMobilePhoneMgrMainMidlet(IManager mgr) {
+	IAdapterMobilePhoneMgrMainMidlet(br.unicamp.ic.sed.cosmos.IManager mgr) {
 		this.manager = mgr;
 	}
 	

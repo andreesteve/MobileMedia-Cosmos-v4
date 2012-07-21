@@ -20,7 +20,7 @@ class IPhotoFacade implements IPhoto{
 	
 	private MIDlet getMidlet() {
 		if( this.midlet == null){
-			IManager manager = ComponentFactory.createInstance();
+			br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 			IMobileResources mobileResources = (IMobileResources) manager.getRequiredInterface("IMobileResources");
 			this.midlet = mobileResources.getMainMIDlet();
 		}

@@ -52,7 +52,7 @@ class BaseController extends AbstractController {
 	 * Initialize the controller
 	 */
 	protected void init() {
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 
 		IAlbum album = (IAlbum) manager.getRequiredInterface("IAlbum");
 
@@ -78,7 +78,7 @@ class BaseController extends AbstractController {
 
 		/** Case: Exit Application **/
 		if (label.equals("Exit")) {
-			IManager manager = ComponentFactory.createInstance();
+			br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 			IMobileResources mobileResources = (IMobileResources) manager.getRequiredInterface("IMobileResources");
 			System.out.println("mobileResources="+mobileResources);
 			mobileResources.destroyApp(true);
@@ -105,7 +105,7 @@ class BaseController extends AbstractController {
 	private boolean goToPreviousScreen() {
 		System.out.println("<* BaseController.goToPreviousScreen() *>");
 		
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 		
 		IAlbum album = (IAlbum) manager.getRequiredInterface("IAlbum");
 		

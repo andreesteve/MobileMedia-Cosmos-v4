@@ -100,7 +100,7 @@ class PhotoViewController extends AbstractController {
 	
 	
 	private void savePhoto() throws ImageNotFoundException, NullAlbumDataReference, InvalidImageDataException, PersistenceMechanismException, UnavailablePhotoAlbumException{
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 		IImageData imageData = null;
 		IFilesystem filesystem = (IFilesystem) manager.getRequiredInterface("IFilesystem");
 

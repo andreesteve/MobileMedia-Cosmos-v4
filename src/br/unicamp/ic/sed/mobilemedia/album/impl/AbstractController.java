@@ -108,7 +108,7 @@ abstract class AbstractController implements CommandListener, ControllerInterfac
 			        return next.postCommand(command);
 			    } else {
 			        System.out.println("AbstractController::postCommand - Reached top of chain. No more handlers for command: " + command.getLabel());
-			        IManager manager = ComponentFactory.createInstance();
+			        br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 			        IPhoto photo = (IPhoto) manager.getRequiredInterface("IPhoto");
 			        return photo.postCommand(command);
 			    }

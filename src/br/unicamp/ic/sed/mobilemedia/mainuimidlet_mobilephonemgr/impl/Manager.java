@@ -2,7 +2,7 @@ package br.unicamp.ic.sed.mobilemedia.mainuimidlet_mobilephonemgr.impl;
 
 import java.util.*;
 
-class Manager implements IManager{
+class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 
 	private Hashtable requiredInterfaces = new Hashtable();
 	private Hashtable providedInterfaces = new Hashtable();

@@ -19,7 +19,7 @@ class WarningExceptionHandler{
 		System.out.println( "[WarningExceptionHandler] Handling: " + exception.getMessage() );
 		
 		
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 		IMobileResources mobile = (IMobileResources)manager.getRequiredInterface( "IMobileResources" );
 		
 		MIDlet midlet = mobile.getMainMIDlet();

@@ -7,7 +7,7 @@ import br.unicamp.ic.sed.mobilemedia.exceptionhandler.spec.req.IMobileResources;
 class IMobileResourcesAdapter implements IMobileResources{
 
 	public MIDlet getMainMIDlet() {
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 		br.unicamp.ic.sed.mobilemedia.main.spec.prov.IMobileResources iMobileResources = (br.unicamp.ic.sed.mobilemedia.main.spec.prov.IMobileResources)manager.getRequiredInterface("IMobileResources");
 		return iMobileResources.getMainMIDlet();
 	}

@@ -5,7 +5,7 @@ import java.util.Hashtable;
 import java.util.Vector;
 
 
-class Manager implements IManager{
+class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 
 	private Hashtable reqInterfaceMap = new Hashtable();
 

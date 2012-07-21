@@ -7,9 +7,9 @@ import br.unicamp.ic.sed.mobilemedia.album.spec.req.IMobilePhone;
 
 class IMobilePhoneAdapter implements IMobilePhone{
 
-	private IManager manager;
+	private br.unicamp.ic.sed.cosmos.IManager manager;
 
-	public IMobilePhoneAdapter(IManager mgr) {
+	public IMobilePhoneAdapter(br.unicamp.ic.sed.cosmos.IManager mgr) {
 		System.out.println(this.getClass().getName()+" constructor");
 		this.manager = mgr;
 	}

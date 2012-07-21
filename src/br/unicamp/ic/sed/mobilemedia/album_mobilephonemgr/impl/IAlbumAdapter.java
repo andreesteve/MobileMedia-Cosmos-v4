@@ -6,9 +6,9 @@ import br.unicamp.ic.sed.mobilemedia.mobilephonemgr.spec.req.IAlbum;
 
 class IAlbumAdapter implements IAlbum{
 	
-	private IManager manager;
+	private br.unicamp.ic.sed.cosmos.IManager manager;
 	
-	public IAlbumAdapter(IManager mgr) {
+	public IAlbumAdapter(br.unicamp.ic.sed.cosmos.IManager mgr) {
 		System.out.println(this.getClass().getName()+" constructor");
 		this.manager = mgr;
 	}

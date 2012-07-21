@@ -4,9 +4,9 @@ import br.unicamp.ic.sed.cosmos.IManager;
 
 public class ComponentFactory {
 
-	private static IManager manager = null;
+	private static br.unicamp.ic.sed.cosmos.IManager manager = null;
 	
-	public static IManager createInstance(){
+	public static br.unicamp.ic.sed.cosmos.IManager createInstance(){
 	
 		if (manager==null)
 			manager = new Manager( );

@@ -4,9 +4,9 @@ package br.unicamp.ic.sed.mobilemedia.photo_album.impl;
 
 public class ComponentFactory {
 
-	private static IManager manager = null;
+	private static br.unicamp.ic.sed.cosmos.IManager manager = null;
 
-	public static IManager createInstance(){
+	public static br.unicamp.ic.sed.cosmos.IManager createInstance(){
 	
 		if (manager==null)
 			manager = new Manager();

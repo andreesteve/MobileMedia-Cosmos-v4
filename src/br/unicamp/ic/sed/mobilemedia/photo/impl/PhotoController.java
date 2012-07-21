@@ -42,7 +42,7 @@ class PhotoController extends PhotoListController {
 
 	private void editLabel() throws ImageNotFoundException, NullAlbumDataReference{
 		//TODO print error message on the screen
-		IManager manager = (IManager) ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = (IManager) ComponentFactory.createInstance();
 		IFilesystem filesystem = (IFilesystem) manager.getRequiredInterface("IFilesystem");
 		String selectedImageName = getSelectedImageName();
 		image = filesystem.getImageInfo(selectedImageName);
@@ -129,7 +129,7 @@ class PhotoController extends PhotoListController {
 		String label = command.getLabel();
 		System.out.println( "<*"+this.getClass().getName()+".handleCommand() *> " + label);
 
-		IManager manager = (IManager) ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = (IManager) ComponentFactory.createInstance();
 		IFilesystem filesystem = (IFilesystem) manager.getRequiredInterface("IFilesystem");
 		//IPhoto photo = (IPhoto) manager.getRequiredInterface("IPhoto");
 
@@ -263,7 +263,7 @@ class PhotoController extends PhotoListController {
 	private void initAddPhotoToAlbum(String albumName) {
 
 		//Get all required interfaces for this method
-		/*IManager manager = (IManager)ComponentFactory.createInstance();
+		/*br.unicamp.ic.sed.cosmos.IManager manager = (IManager)ComponentFactory.createInstance();
 		IMobileResources iMobileResources = (IMobileResources)manager.getRequiredInterface("IMobileResources");*/
 		MIDlet midlet = this.getMidlet();
 
@@ -302,7 +302,7 @@ class PhotoController extends PhotoListController {
 	private void showImage(String name) throws ImageNotFoundException, PersistenceMechanismException {
 		// [EF] Instead of replicating this code, I change to use the method "getSelectedImageName()". 		
 		Image storedImage = null;
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 		IFilesystem filesystem = (IFilesystem) manager.getRequiredInterface("IFilesystem");
 
 		storedImage = filesystem.getImageFromRecordStore(getCurrentStoreName(), name);
@@ -322,7 +322,7 @@ class PhotoController extends PhotoListController {
 	}
 
 	private void updateImage(IImageData image) throws InvalidImageDataException, PersistenceMechanismException {
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 		IFilesystem filesystem = (IFilesystem) manager.getRequiredInterface("IFilesystem");
 
 		filesystem.updateImageInfo(image, image);

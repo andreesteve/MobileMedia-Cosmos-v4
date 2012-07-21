@@ -28,7 +28,7 @@ class IAlbumFacade implements IAlbum{
 
 	private AlbumController getAlbumController() {
 		if( this.albumController == null){
-			IManager manager = ComponentFactory.createInstance();
+			br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 			IMobileResources mobileResources = (IMobileResources) manager.getRequiredInterface("IMobileResources");
 			MIDlet midlet = mobileResources.getMainMIDlet();
 			AlbumListScreen albumListScreen = this.getAlbumListScreen();
@@ -42,7 +42,7 @@ class IAlbumFacade implements IAlbum{
 	public void initAlbumListScreen ( ){
 		
 		//initialize all the screens
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 		IFilesystem filesystem = (IFilesystem)manager.getRequiredInterface("IFilesystem");
 		String[] albumNames = filesystem.getAlbumNames();
 		

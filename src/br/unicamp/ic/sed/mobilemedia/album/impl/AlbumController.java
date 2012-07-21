@@ -47,7 +47,7 @@ class AlbumController extends AbstractController {
 		String label = command.getLabel();
 		System.out.println( "<*"+this.getClass().getName()+".handleCommand() *> " + label);
 
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 		IFilesystem filesystem = (IFilesystem) manager.getRequiredInterface("IFilesystem");
 		System.out.println("[AlbumController] filesystem = "+filesystem);
 		if (label.equals("Reset")) {
@@ -128,7 +128,7 @@ class AlbumController extends AbstractController {
 	 */
 	private void resetImageData() throws PersistenceMechanismException {
 		//begin - modified in MobileMedia-Cosmos-OO-v4
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 		IFilesystem filesystem = (IFilesystem) manager.getRequiredInterface("IFilesystem");
 
 		filesystem.resetImageData();
@@ -158,7 +158,7 @@ class AlbumController extends AbstractController {
 		System.out.println("<* AlbumController.goToPreviousScreen() *>");
 
 		//begin - modified in MobileMedia-Cosmos-OO-v4
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 
 		IFilesystem filesystem = (IFilesystem) manager.getRequiredInterface("IFilesystem");
 
@@ -178,7 +178,7 @@ class AlbumController extends AbstractController {
 
 	/*protected void initAlbum(){
 		//Get all MobilePhoto defined albums from the record store
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 
 		IFilesystem filesystem = (IFilesystem) manager.getRequiredInterface("IFilesystem");
 
@@ -197,7 +197,7 @@ class AlbumController extends AbstractController {
 	 * Set the current screen for display
 	 */
 	public void setCurrentScreen(Displayable d) {
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 
 		IMobileResources iMobileResources = (IMobileResources)manager.getRequiredInterface("IMobileResources");
 
@@ -211,7 +211,7 @@ class AlbumController extends AbstractController {
 	 * Set the current screen for display
 	 */
 	protected void setCurrentScreen(Alert a , Displayable d) {
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 
 		IMobileResources iMobileResources = (IMobileResources)manager.getRequiredInterface("IMobileResources");
 

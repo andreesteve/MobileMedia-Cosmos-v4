@@ -6,7 +6,7 @@ import br.unicamp.ic.sed.mobilemedia.photo.spec.req.IExceptionHandler;
 class Handler {
 	
 	protected void handle(Exception e){
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 		IExceptionHandler handler = (IExceptionHandler) manager.getRequiredInterface("IExceptionHandler");
 		handler.handle(e);
 	}

@@ -17,7 +17,7 @@ public class IAdapterFilesystemPhoto implements IFilesystem {
 	public void addImageData(String photoName, IImageData imageData, String albumName) 
 	throws br.unicamp.ic.sed.mobilemedia.photo.spec.excep.InvalidImageDataException, 
 	br.unicamp.ic.sed.mobilemedia.photo.spec.excep.PersistenceMechanismException{
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 		br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IFilesystem filesystem = (br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IFilesystem)manager.getRequiredInterface("IFilesystem");
 		try {
 			filesystem.addImageData(photoName, imageData, albumName);
@@ -32,7 +32,7 @@ public class IAdapterFilesystemPhoto implements IFilesystem {
 
 	public void addNewPhotoToAlbum(String imageName, String imagePath,
 			String albumName) throws br.unicamp.ic.sed.mobilemedia.photo.spec.excep.InvalidImageDataException, br.unicamp.ic.sed.mobilemedia.photo.spec.excep.PersistenceMechanismException {
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 		br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IFilesystem filesystem = (br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IFilesystem)manager.getRequiredInterface("IFilesystem");
 		try {
 			filesystem.addNewPhotoToAlbum(imageName, imagePath, albumName);
@@ -43,7 +43,7 @@ public class IAdapterFilesystemPhoto implements IFilesystem {
 	}
 
 	public void deleteImage(String imageName, String albumName) throws br.unicamp.ic.sed.mobilemedia.photo.spec.excep.PersistenceMechanismException, br.unicamp.ic.sed.mobilemedia.photo.spec.excep.ImageNotFoundException {
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 		br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IFilesystem filesystem = (br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IFilesystem)manager.getRequiredInterface("IFilesystem");
 		try {
 			filesystem.deleteImage(imageName, albumName);
@@ -55,7 +55,7 @@ public class IAdapterFilesystemPhoto implements IFilesystem {
 	}
 
 	public void deletePhotoAlbum(String albumName) throws br.unicamp.ic.sed.mobilemedia.photo.spec.excep.PersistenceMechanismException {
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 		br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IFilesystem filesystem = (br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IFilesystem)manager.getRequiredInterface("IFilesystem");
 		try {
 			filesystem.deletePhotoAlbum(albumName);
@@ -65,13 +65,13 @@ public class IAdapterFilesystemPhoto implements IFilesystem {
 	}
 
 	public String[] getAlbumNames() {
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 		br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IFilesystem filesystem = (br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IFilesystem)manager.getRequiredInterface("IFilesystem");
 		return filesystem.getAlbumNames();
 	}
 
 	public Image getImageFromRecordStore(String albumName, String imageName) throws br.unicamp.ic.sed.mobilemedia.photo.spec.excep.ImageNotFoundException, br.unicamp.ic.sed.mobilemedia.photo.spec.excep.PersistenceMechanismException  {
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 		br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IFilesystem filesystem = (br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IFilesystem)manager.getRequiredInterface("IFilesystem");
 		try {
 			return filesystem.getImageFromRecordStore(albumName, imageName);
@@ -83,7 +83,7 @@ public class IAdapterFilesystemPhoto implements IFilesystem {
 	}
 
 	public IImageData getImageInfo(String imageName) throws br.unicamp.ic.sed.mobilemedia.photo.spec.excep.ImageNotFoundException, br.unicamp.ic.sed.mobilemedia.photo.spec.excep.NullAlbumDataReference {
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 		br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IFilesystem filesystem = (br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IFilesystem)manager.getRequiredInterface("IFilesystem");
 		try {
 			return filesystem.getImageInfo(imageName);
@@ -95,7 +95,7 @@ public class IAdapterFilesystemPhoto implements IFilesystem {
 	}
 
 	public IImageData[] getImages(String albumName) throws br.unicamp.ic.sed.mobilemedia.photo.spec.excep.UnavailablePhotoAlbumException {
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 		br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IFilesystem filesystem = (br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IFilesystem)manager.getRequiredInterface("IFilesystem");
 		try {
 			return filesystem.getImages(albumName);
@@ -105,7 +105,7 @@ public class IAdapterFilesystemPhoto implements IFilesystem {
 	}
 
 	public void resetImageData() throws br.unicamp.ic.sed.mobilemedia.photo.spec.excep.PersistenceMechanismException {
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 		br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IFilesystem filesystem = (br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IFilesystem)manager.getRequiredInterface("IFilesystem");
 		try {
 			filesystem.resetImageData();
@@ -115,7 +115,7 @@ public class IAdapterFilesystemPhoto implements IFilesystem {
 	}
 
 	public void updateImageInfo(IImageData velhoID, IImageData novoID) throws br.unicamp.ic.sed.mobilemedia.photo.spec.excep.InvalidImageDataException, br.unicamp.ic.sed.mobilemedia.photo.spec.excep.PersistenceMechanismException {
-		IManager manager = ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager manager = ComponentFactory.createInstance();
 		br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IFilesystem filesystem = (br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.prov.IFilesystem)manager.getRequiredInterface("IFilesystem");
 		try {
 			filesystem.updateImageInfo(velhoID, novoID);
