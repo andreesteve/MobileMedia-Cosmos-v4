@@ -2,7 +2,6 @@ package br.unicamp.ic.sed.mobilemedia.impl.exceptionhandler.impl;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Vector;
-import br.unicamp.ic.sed.cosmos.IManager;
 import br.unicamp.ic.sed.mobilemedia.impl.exceptionhandler.spec.req.IMobileResources;
 class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 	Hashtable providedInterfaces;

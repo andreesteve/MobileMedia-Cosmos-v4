@@ -10,7 +10,6 @@ package br.unicamp.ic.sed.mobilemedia.impl.photo.impl;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Vector;
-import br.unicamp.ic.sed.cosmos.IManager;
 import br.unicamp.ic.sed.mobilemedia.impl.photo.spec.req.IExceptionHandler;
 import br.unicamp.ic.sed.mobilemedia.impl.photo.spec.req.IFilesystem;
 import br.unicamp.ic.sed.mobilemedia.impl.photo.spec.req.IMobilePhone;

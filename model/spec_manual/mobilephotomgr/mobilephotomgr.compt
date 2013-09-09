@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:componenteditordiagram="http://componenteditordiagram" xmlns:fenix="http://fenix">
+  <fenix:Model>
+    <versionedItem xsi:type="fenix:ComponentSpecification" description="mobilephotomgr" component="/0/@softwareComponent.0">
+      <externalProperty xsi:type="fenix:RequiredInterface">
+        <type href="interfaces/IAlbum.iface#/0/@interfaceType.0"/>
+      </externalProperty>
+      <externalProperty xsi:type="fenix:RequiredInterface">
+        <type href="interfaces/IFilesystem.iface#/0/@interfaceType.0"/>
+      </externalProperty>
+      <externalProperty xsi:type="fenix:RequiredInterface">
+        <type href="interfaces/IMobileResources.iface#/0/@interfaceType.0"/>
+      </externalProperty>
+      <externalProperty xsi:type="fenix:RequiredInterface">
+        <type href="interfaces/IPhoto.iface#/0/@interfaceType.0"/>
+      </externalProperty>
+    </versionedItem>
+    <softwareComponent specification="/0/@versionedItem.0"/>
+  </fenix:Model>
+  <componenteditordiagram:DiagramComp>
+    <componentSpecificationViewComp reqConnectionViewComp="/1/@reqConnectionViewComp.0 /1/@reqConnectionViewComp.1 /1/@reqConnectionViewComp.2 /1/@reqConnectionViewComp.3" x="200" y="100" componentSpecification="/0/@versionedItem.0"/>
+    <reqConnectionViewComp componentSpecificationViewComp="/1/@componentSpecificationViewComp.0" requiredInterfaceViewComp="/1/@requiredInterfaceViewComp.0"/>
+    <reqConnectionViewComp componentSpecificationViewComp="/1/@componentSpecificationViewComp.0" requiredInterfaceViewComp="/1/@requiredInterfaceViewComp.1"/>
+    <reqConnectionViewComp componentSpecificationViewComp="/1/@componentSpecificationViewComp.0" requiredInterfaceViewComp="/1/@requiredInterfaceViewComp.2"/>
+    <reqConnectionViewComp componentSpecificationViewComp="/1/@componentSpecificationViewComp.0" requiredInterfaceViewComp="/1/@requiredInterfaceViewComp.3"/>
+    <requiredInterfaceViewComp x="469" y="111" reqConnectionViewComp="/1/@reqConnectionViewComp.0" requiredInterface="/0/@versionedItem.0/@externalProperty.0"/>
+    <requiredInterfaceViewComp x="232" y="242" reqConnectionViewComp="/1/@reqConnectionViewComp.1" requiredInterface="/0/@versionedItem.0/@externalProperty.1"/>
+    <requiredInterfaceViewComp x="221" y="29" reqConnectionViewComp="/1/@reqConnectionViewComp.2" requiredInterface="/0/@versionedItem.0/@externalProperty.2"/>
+    <requiredInterfaceViewComp x="62" y="128" reqConnectionViewComp="/1/@reqConnectionViewComp.3" requiredInterface="/0/@versionedItem.0/@externalProperty.3"/>
+  </componenteditordiagram:DiagramComp>
+</xmi:XMI>

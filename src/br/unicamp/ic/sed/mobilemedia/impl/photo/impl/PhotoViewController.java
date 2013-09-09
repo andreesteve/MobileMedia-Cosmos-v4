@@ -20,7 +20,6 @@ import br.unicamp.ic.sed.mobilemedia.impl.photo.spec.excep.PersistenceMechanismE
 import br.unicamp.ic.sed.mobilemedia.impl.photo.spec.excep.UnavailablePhotoAlbumException;
 import br.unicamp.ic.sed.mobilemedia.impl.photo.spec.req.IFilesystem;
 import br.unicamp.ic.sed.mobilemedia.shared.dt.IImageData;
-import br.unicamp.ic.sed.cosmos.IManager;
 
 
 

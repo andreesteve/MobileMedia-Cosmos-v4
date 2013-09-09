@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fenix:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fenix="http://fenix">
+  <versionedItem xsi:type="fenix:CompositeComponent" description="mobilemedia">
+    <specification href="mobilemedia.compt#/0/@versionedItem.0"/>
+    <architecture>
+      <subComponent type="//@elementType.0">
+        <specification href="../exceptionhandler/exceptionhandler.compt#/0/@versionedItem.0"/>
+        <componentConnectionPoint targetInterface="//@versionedItem.0/@architecture/@interfaceConnection.18 //@versionedItem.0/@architecture/@interfaceConnection.20 //@versionedItem.0/@architecture/@interfaceConnection.22">
+          <externalProperty xsi:type="fenix:ProvidedInterface" href="../exceptionhandler/exceptionhandler.compt#/0/@versionedItem.0/@externalProperty.0"/>
+        </componentConnectionPoint>
+      </subComponent>
+      <subComponent type="//@elementType.0">
+        <specification href="../mobilephotomgr/mobilephotomgr.compt#/0/@versionedItem.0"/>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.7">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../mobilephotomgr/mobilephotomgr.compt#/0/@versionedItem.0/@externalProperty.0"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.9">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../mobilephotomgr/mobilephotomgr.compt#/0/@versionedItem.0/@externalProperty.1"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.3">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../mobilephotomgr/mobilephotomgr.compt#/0/@versionedItem.0/@externalProperty.2"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.13">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../mobilephotomgr/mobilephotomgr.compt#/0/@versionedItem.0/@externalProperty.3"/>
+        </componentConnectionPoint>
+      </subComponent>
+      <subComponent type="//@elementType.0">
+        <specification href="../mainuimidlet/mainuimidlet.compt#/0/@versionedItem.0"/>
+        <componentConnectionPoint targetInterface="//@versionedItem.0/@architecture/@interfaceConnection.0 //@versionedItem.0/@architecture/@interfaceConnection.2 //@versionedItem.0/@architecture/@interfaceConnection.4">
+          <externalProperty xsi:type="fenix:ProvidedInterface" href="../mainuimidlet/mainuimidlet.compt#/0/@versionedItem.0/@externalProperty.0"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.23">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../mainuimidlet/mainuimidlet.compt#/0/@versionedItem.0/@externalProperty.1"/>
+        </componentConnectionPoint>
+      </subComponent>
+      <subComponent type="//@elementType.0">
+        <specification href="../photo/photo.compt#/0/@versionedItem.0"/>
+        <componentConnectionPoint targetInterface="//@versionedItem.0/@architecture/@interfaceConnection.12 //@versionedItem.0/@architecture/@interfaceConnection.16">
+          <externalProperty xsi:type="fenix:ProvidedInterface" href="../photo/photo.compt#/0/@versionedItem.0/@externalProperty.0"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.1">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../photo/photo.compt#/0/@versionedItem.0/@externalProperty.1"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.15">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../photo/photo.compt#/0/@versionedItem.0/@externalProperty.2"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.19">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../photo/photo.compt#/0/@versionedItem.0/@externalProperty.3"/>
+        </componentConnectionPoint>
+      </subComponent>
+      <subComponent type="//@elementType.0">
+        <specification href="../filesystemmgr/filesystemmgr.compt#/0/@versionedItem.0"/>
+        <componentConnectionPoint targetInterface="//@versionedItem.0/@architecture/@interfaceConnection.8 //@versionedItem.0/@architecture/@interfaceConnection.10 //@versionedItem.0/@architecture/@interfaceConnection.14">
+          <externalProperty xsi:type="fenix:ProvidedInterface" href="../filesystemmgr/filesystemmgr.compt#/0/@versionedItem.0/@externalProperty.0"/>
+        </componentConnectionPoint>
+      </subComponent>
+      <subComponent type="//@elementType.0">
+        <specification href="../album/album.compt#/0/@versionedItem.0"/>
+        <componentConnectionPoint targetInterface="//@versionedItem.0/@architecture/@interfaceConnection.6">
+          <externalProperty xsi:type="fenix:ProvidedInterface" href="../album/album.compt#/0/@versionedItem.0/@externalProperty.0"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.5">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../album/album.compt#/0/@versionedItem.0/@externalProperty.1"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.17">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../album/album.compt#/0/@versionedItem.0/@externalProperty.2"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.21">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../album/album.compt#/0/@versionedItem.0/@externalProperty.3"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.11">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../album/album.compt#/0/@versionedItem.0/@externalProperty.4"/>
+        </componentConnectionPoint>
+      </subComponent>
+      <subComponent type="//@elementType.1">
+        <specification href="../mainuimidlet/mainuimidlet_photo.compt#/0/@versionedItem.0"/>
+        <componentConnectionPoint targetInterface="//@versionedItem.0/@architecture/@interfaceConnection.1">
+          <externalProperty xsi:type="fenix:ProvidedInterface" href="../mainuimidlet/mainuimidlet_photo.compt#/0/@versionedItem.0/@externalProperty.0"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.0">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../mainuimidlet/mainuimidlet_photo.compt#/0/@versionedItem.0/@externalProperty.1"/>
+        </componentConnectionPoint>
+      </subComponent>
+      <subComponent type="//@elementType.1">
+        <specification href="../mainuimidlet/mainuimidlet_mobilephotomgr.compt#/0/@versionedItem.0"/>
+        <componentConnectionPoint targetInterface="//@versionedItem.0/@architecture/@interfaceConnection.3">
+          <externalProperty xsi:type="fenix:ProvidedInterface" href="../mainuimidlet/mainuimidlet_mobilephotomgr.compt#/0/@versionedItem.0/@externalProperty.0"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.2">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../mainuimidlet/mainuimidlet_mobilephotomgr.compt#/0/@versionedItem.0/@externalProperty.1"/>
+        </componentConnectionPoint>
+      </subComponent>
+      <subComponent type="//@elementType.1">
+        <specification href="../mainuimidlet/mainuimidlet_album.compt#/0/@versionedItem.0"/>
+        <componentConnectionPoint targetInterface="//@versionedItem.0/@architecture/@interfaceConnection.5">
+          <externalProperty xsi:type="fenix:ProvidedInterface" href="../mainuimidlet/mainuimidlet_album.compt#/0/@versionedItem.0/@externalProperty.0"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.4">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../mainuimidlet/mainuimidlet_album.compt#/0/@versionedItem.0/@externalProperty.1"/>
+        </componentConnectionPoint>
+      </subComponent>
+      <subComponent type="//@elementType.1">
+        <specification href="../album/album_mobilephotomgr.compt#/0/@versionedItem.0"/>
+        <componentConnectionPoint targetInterface="//@versionedItem.0/@architecture/@interfaceConnection.7">
+          <externalProperty xsi:type="fenix:ProvidedInterface" href="../album/album_mobilephotomgr.compt#/0/@versionedItem.0/@externalProperty.0"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.6">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../album/album_mobilephotomgr.compt#/0/@versionedItem.0/@externalProperty.1"/>
+        </componentConnectionPoint>
+      </subComponent>
+      <subComponent type="//@elementType.1">
+        <specification href="../filesystemmgr/filesystemmgr_mobilephotomgr.compt#/0/@versionedItem.0"/>
+        <componentConnectionPoint targetInterface="//@versionedItem.0/@architecture/@interfaceConnection.9">
+          <externalProperty xsi:type="fenix:ProvidedInterface" href="../filesystemmgr/filesystemmgr_mobilephotomgr.compt#/0/@versionedItem.0/@externalProperty.0"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.8">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../filesystemmgr/filesystemmgr_mobilephotomgr.compt#/0/@versionedItem.0/@externalProperty.1"/>
+        </componentConnectionPoint>
+      </subComponent>
+      <subComponent type="//@elementType.1">
+        <specification href="../filesystemmgr/filesystemmgr_album.compt#/0/@versionedItem.0"/>
+        <componentConnectionPoint targetInterface="//@versionedItem.0/@architecture/@interfaceConnection.11">
+          <externalProperty xsi:type="fenix:ProvidedInterface" href="../filesystemmgr/filesystemmgr_album.compt#/0/@versionedItem.0/@externalProperty.0"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.10">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../filesystemmgr/filesystemmgr_album.compt#/0/@versionedItem.0/@externalProperty.1"/>
+        </componentConnectionPoint>
+      </subComponent>
+      <subComponent type="//@elementType.1">
+        <specification href="../photo/photo_mobilephotomgr.compt#/0/@versionedItem.0"/>
+        <componentConnectionPoint targetInterface="//@versionedItem.0/@architecture/@interfaceConnection.13">
+          <externalProperty xsi:type="fenix:ProvidedInterface" href="../photo/photo_mobilephotomgr.compt#/0/@versionedItem.0/@externalProperty.0"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.12">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../photo/photo_mobilephotomgr.compt#/0/@versionedItem.0/@externalProperty.1"/>
+        </componentConnectionPoint>
+      </subComponent>
+      <subComponent type="//@elementType.1">
+        <specification href="../filesystemmgr/filesystemmgr_photo.compt#/0/@versionedItem.0"/>
+        <componentConnectionPoint targetInterface="//@versionedItem.0/@architecture/@interfaceConnection.15">
+          <externalProperty xsi:type="fenix:ProvidedInterface" href="../filesystemmgr/filesystemmgr_photo.compt#/0/@versionedItem.0/@externalProperty.0"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.14">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../filesystemmgr/filesystemmgr_photo.compt#/0/@versionedItem.0/@externalProperty.1"/>
+        </componentConnectionPoint>
+      </subComponent>
+      <subComponent type="//@elementType.1">
+        <specification href="../photo/photo_album.compt#/0/@versionedItem.0"/>
+        <componentConnectionPoint targetInterface="//@versionedItem.0/@architecture/@interfaceConnection.17">
+          <externalProperty xsi:type="fenix:ProvidedInterface" href="../photo/photo_album.compt#/0/@versionedItem.0/@externalProperty.0"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.16">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../photo/photo_album.compt#/0/@versionedItem.0/@externalProperty.1"/>
+        </componentConnectionPoint>
+      </subComponent>
+      <subComponent type="//@elementType.1">
+        <specification href="../exceptionhandler/exceptionhandler_photo.compt#/0/@versionedItem.0"/>
+        <componentConnectionPoint targetInterface="//@versionedItem.0/@architecture/@interfaceConnection.19">
+          <externalProperty xsi:type="fenix:ProvidedInterface" href="../exceptionhandler/exceptionhandler_photo.compt#/0/@versionedItem.0/@externalProperty.0"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.18">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../exceptionhandler/exceptionhandler_photo.compt#/0/@versionedItem.0/@externalProperty.1"/>
+        </componentConnectionPoint>
+      </subComponent>
+      <subComponent type="//@elementType.1">
+        <specification href="../exceptionhandler/exceptionhandler_album.compt#/0/@versionedItem.0"/>
+        <componentConnectionPoint targetInterface="//@versionedItem.0/@architecture/@interfaceConnection.21">
+          <externalProperty xsi:type="fenix:ProvidedInterface" href="../exceptionhandler/exceptionhandler_album.compt#/0/@versionedItem.0/@externalProperty.0"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.20">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../exceptionhandler/exceptionhandler_album.compt#/0/@versionedItem.0/@externalProperty.1"/>
+        </componentConnectionPoint>
+      </subComponent>
+      <subComponent type="//@elementType.1">
+        <specification href="../exceptionhandler/exceptionhandler_mainuimidlet.compt#/0/@versionedItem.0"/>
+        <componentConnectionPoint targetInterface="//@versionedItem.0/@architecture/@interfaceConnection.23">
+          <externalProperty xsi:type="fenix:ProvidedInterface" href="../exceptionhandler/exceptionhandler_mainuimidlet.compt#/0/@versionedItem.0/@externalProperty.0"/>
+        </componentConnectionPoint>
+        <componentConnectionPoint sourceInterface="//@versionedItem.0/@architecture/@interfaceConnection.22">
+          <externalProperty xsi:type="fenix:RequiredInterface" href="../exceptionhandler/exceptionhandler_mainuimidlet.compt#/0/@versionedItem.0/@externalProperty.1"/>
+        </componentConnectionPoint>
+      </subComponent>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.6/@componentConnectionPoint.1" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.2/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.3/@componentConnectionPoint.1" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.6/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.7/@componentConnectionPoint.1" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.2/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.1/@componentConnectionPoint.2" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.7/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.8/@componentConnectionPoint.1" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.2/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.5/@componentConnectionPoint.1" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.8/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.9/@componentConnectionPoint.1" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.5/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.1/@componentConnectionPoint.0" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.9/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.10/@componentConnectionPoint.1" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.4/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.1/@componentConnectionPoint.1" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.10/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.11/@componentConnectionPoint.1" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.4/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.5/@componentConnectionPoint.4" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.11/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.12/@componentConnectionPoint.1" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.3/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.1/@componentConnectionPoint.3" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.12/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.13/@componentConnectionPoint.1" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.4/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.3/@componentConnectionPoint.2" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.13/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.14/@componentConnectionPoint.1" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.3/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.5/@componentConnectionPoint.2" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.14/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.15/@componentConnectionPoint.1" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.0/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.3/@componentConnectionPoint.3" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.15/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.16/@componentConnectionPoint.1" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.0/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.5/@componentConnectionPoint.3" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.16/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.17/@componentConnectionPoint.1" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.0/@componentConnectionPoint.0"/>
+      <interfaceConnection sourceConnectionPoint="//@versionedItem.0/@architecture/@subComponent.2/@componentConnectionPoint.1" targetConnectionPoint="//@versionedItem.0/@architecture/@subComponent.17/@componentConnectionPoint.0"/>
+    </architecture>
+  </versionedItem>
+  <elementType xsi:type="fenix:ArchitecturalComponent" element="//@versionedItem.0/@architecture/@subComponent.0 //@versionedItem.0/@architecture/@subComponent.1 //@versionedItem.0/@architecture/@subComponent.2 //@versionedItem.0/@architecture/@subComponent.3 //@versionedItem.0/@architecture/@subComponent.4 //@versionedItem.0/@architecture/@subComponent.5"/>
+  <elementType xsi:type="fenix:ArchitecturalConnector" element="//@versionedItem.0/@architecture/@subComponent.6 //@versionedItem.0/@architecture/@subComponent.7 //@versionedItem.0/@architecture/@subComponent.8 //@versionedItem.0/@architecture/@subComponent.9 //@versionedItem.0/@architecture/@subComponent.10 //@versionedItem.0/@architecture/@subComponent.11 //@versionedItem.0/@architecture/@subComponent.12 //@versionedItem.0/@architecture/@subComponent.13 //@versionedItem.0/@architecture/@subComponent.14 //@versionedItem.0/@architecture/@subComponent.15 //@versionedItem.0/@architecture/@subComponent.16 //@versionedItem.0/@architecture/@subComponent.17"/>
+  <diagramArch>
+    <providedInterfaceViewArch x="584" subComponentViewArch="//@diagramArch/@subComponentViewArch.0" y="622" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.18 //@diagramArch/@interfaceConnectionViewArch.20 //@diagramArch/@interfaceConnectionViewArch.22" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.0/@componentConnectionPoint.0">
+      <provConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.0"/>
+    </providedInterfaceViewArch>
+    <providedInterfaceViewArch x="695" subComponentViewArch="//@diagramArch/@subComponentViewArch.2" y="54" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.0 //@diagramArch/@interfaceConnectionViewArch.2 //@diagramArch/@interfaceConnectionViewArch.4" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.2/@componentConnectionPoint.0">
+      <provConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.2"/>
+    </providedInterfaceViewArch>
+    <providedInterfaceViewArch x="369" subComponentViewArch="//@diagramArch/@subComponentViewArch.3" y="440" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.12 //@diagramArch/@interfaceConnectionViewArch.16" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.3/@componentConnectionPoint.0">
+      <provConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.3"/>
+    </providedInterfaceViewArch>
+    <providedInterfaceViewArch x="782" subComponentViewArch="//@diagramArch/@subComponentViewArch.4" y="629" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.8 //@diagramArch/@interfaceConnectionViewArch.10 //@diagramArch/@interfaceConnectionViewArch.14" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.4/@componentConnectionPoint.0">
+      <provConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.4"/>
+    </providedInterfaceViewArch>
+    <providedInterfaceViewArch x="1142" subComponentViewArch="//@diagramArch/@subComponentViewArch.5" y="185" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.6" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.5/@componentConnectionPoint.0">
+      <provConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.5"/>
+    </providedInterfaceViewArch>
+    <providedInterfaceViewArch x="167" subComponentViewArch="//@diagramArch/@subComponentViewArch.6" y="214" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.1" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.6/@componentConnectionPoint.0">
+      <provConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.6"/>
+    </providedInterfaceViewArch>
+    <providedInterfaceViewArch x="722" subComponentViewArch="//@diagramArch/@subComponentViewArch.7" y="264" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.3" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.7/@componentConnectionPoint.0">
+      <provConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.7"/>
+    </providedInterfaceViewArch>
+    <providedInterfaceViewArch x="959" subComponentViewArch="//@diagramArch/@subComponentViewArch.8" y="134" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.5" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.8/@componentConnectionPoint.0">
+      <provConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.8"/>
+    </providedInterfaceViewArch>
+    <providedInterfaceViewArch x="981" subComponentViewArch="//@diagramArch/@subComponentViewArch.9" y="337" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.7" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.9/@componentConnectionPoint.0">
+      <provConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.9"/>
+    </providedInterfaceViewArch>
+    <providedInterfaceViewArch x="692" subComponentViewArch="//@diagramArch/@subComponentViewArch.10" y="438" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.9" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.10/@componentConnectionPoint.0">
+      <provConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.10"/>
+    </providedInterfaceViewArch>
+    <providedInterfaceViewArch x="1275" subComponentViewArch="//@diagramArch/@subComponentViewArch.11" y="579" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.11" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.11/@componentConnectionPoint.0">
+      <provConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.11"/>
+    </providedInterfaceViewArch>
+    <providedInterfaceViewArch x="540" subComponentViewArch="//@diagramArch/@subComponentViewArch.12" y="318" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.13" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.12/@componentConnectionPoint.0">
+      <provConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.12"/>
+    </providedInterfaceViewArch>
+    <providedInterfaceViewArch x="246" subComponentViewArch="//@diagramArch/@subComponentViewArch.13" y="584" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.15" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.13/@componentConnectionPoint.0">
+      <provConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.13"/>
+    </providedInterfaceViewArch>
+    <providedInterfaceViewArch x="1111" subComponentViewArch="//@diagramArch/@subComponentViewArch.14" y="435" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.17" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.14/@componentConnectionPoint.0">
+      <provConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.14"/>
+    </providedInterfaceViewArch>
+    <providedInterfaceViewArch x="464" subComponentViewArch="//@diagramArch/@subComponentViewArch.15" y="503" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.19" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.15/@componentConnectionPoint.0">
+      <provConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.15"/>
+    </providedInterfaceViewArch>
+    <providedInterfaceViewArch x="1174" subComponentViewArch="//@diagramArch/@subComponentViewArch.16" y="606" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.21" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.16/@componentConnectionPoint.0">
+      <provConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.16"/>
+    </providedInterfaceViewArch>
+    <providedInterfaceViewArch x="415" subComponentViewArch="//@diagramArch/@subComponentViewArch.17" y="25" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.23" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.17/@componentConnectionPoint.0">
+      <provConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.17"/>
+    </providedInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.1" x="849" y="336" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.7" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.1/@componentConnectionPoint.0">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.1"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.1" x="588" y="445" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.9" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.1/@componentConnectionPoint.1">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.1"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.1" x="576" y="263" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.3" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.1/@componentConnectionPoint.2">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.1"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.1" x="538" y="379" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.13" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.1/@componentConnectionPoint.3">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.1"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.2" x="401" y="114" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.23" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.2/@componentConnectionPoint.1">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.2"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.3" x="165" y="292" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.1" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.3/@componentConnectionPoint.1">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.3"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.3" x="195" y="502" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.15" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.3/@componentConnectionPoint.2">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.3"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.3" x="319" y="505" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.19" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.3/@componentConnectionPoint.3">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.3"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.5" x="1096" y="134" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.5" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.5/@componentConnectionPoint.1">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.5"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.5" x="1106" y="370" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.17" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.5/@componentConnectionPoint.2">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.5"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.5" x="1171" y="393" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.21" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.5/@componentConnectionPoint.3">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.5"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.5" x="1299" y="395" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.11" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.5/@componentConnectionPoint.4">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.5"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.6" x="542" y="154" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.0" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.6/@componentConnectionPoint.1">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.6"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.7" x="737" y="111" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.2" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.7/@componentConnectionPoint.1">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.7"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.8" x="820" y="53" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.4" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.8/@componentConnectionPoint.1">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.8"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.9" x="1149" y="244" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.6" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.9/@componentConnectionPoint.1">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.9"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.10" x="826" y="532" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.8" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.10/@componentConnectionPoint.1">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.10"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.11" x="1037" y="705" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.10" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.11/@componentConnectionPoint.1">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.11"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.12" x="410" y="389" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.12" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.12/@componentConnectionPoint.1">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.12"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.13" x="677" y="719" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.14" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.13/@componentConnectionPoint.1">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.13"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.14" x="971" y="527" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.16" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.14/@componentConnectionPoint.1">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.14"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.15" x="397" y="643" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.18" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.15/@componentConnectionPoint.1">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.15"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.16" x="699" y="575" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.20" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.16/@componentConnectionPoint.1">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.16"/>
+    </requiredInterfaceViewArch>
+    <requiredInterfaceViewArch subComponentView="//@diagramArch/@subComponentViewArch.17" x="229" y="133" interfaceConnectionViewArch="//@diagramArch/@interfaceConnectionViewArch.22" componentConnectionPoint="//@versionedItem.0/@architecture/@subComponent.17/@componentConnectionPoint.1">
+      <reqConnectionView subComponentViewArch="//@diagramArch/@subComponentViewArch.17"/>
+    </requiredInterfaceViewArch>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.0" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.1" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.12"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.1" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.5" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.5"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.2" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.1" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.13"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.3" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.6" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.2"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.4" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.1" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.14"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.5" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.7" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.8"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.6" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.4" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.15"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.7" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.8" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.0"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.8" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.3" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.16"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.9" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.9" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.1"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.10" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.3" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.17"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.11" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.10" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.11"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.12" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.2" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.18"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.13" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.11" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.3"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.14" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.3" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.19"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.15" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.12" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.6"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.16" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.2" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.20"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.17" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.13" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.9"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.18" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.0" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.21"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.19" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.14" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.7"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.20" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.0" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.22"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.21" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.15" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.10"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.22" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.0" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.23"/>
+    <interfaceConnectionViewArch interfaceConnection="//@versionedItem.0/@architecture/@interfaceConnection.23" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.16" requiredInterfaceViewArch="//@diagramArch/@requiredInterfaceViewArch.4"/>
+    <compositeComponentViewArch compositeComponent="//@versionedItem.0" x="143" y="10" width="1251" height="812"/>
+    <subComponentViewArch x="469" y="696" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.0" subComponent="//@versionedItem.0/@architecture/@subComponent.0" provConnectionView="//@diagramArch/@providedInterfaceViewArch.0/@provConnectionView"/>
+    <subComponentViewArch requiredInterfaceView="//@diagramArch/@requiredInterfaceViewArch.0 //@diagramArch/@requiredInterfaceViewArch.1 //@diagramArch/@requiredInterfaceViewArch.2 //@diagramArch/@requiredInterfaceViewArch.3" x="643" y="337" subComponent="//@versionedItem.0/@architecture/@subComponent.1" reqConnectionView="//@diagramArch/@requiredInterfaceViewArch.0/@reqConnectionView //@diagramArch/@requiredInterfaceViewArch.1/@reqConnectionView //@diagramArch/@requiredInterfaceViewArch.2/@reqConnectionView //@diagramArch/@requiredInterfaceViewArch.3/@reqConnectionView"/>
+    <subComponentViewArch requiredInterfaceView="//@diagramArch/@requiredInterfaceViewArch.4" x="535" y="41" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.1" subComponent="//@versionedItem.0/@architecture/@subComponent.2" provConnectionView="//@diagramArch/@providedInterfaceViewArch.1/@provConnectionView" reqConnectionView="//@diagramArch/@requiredInterfaceViewArch.4/@reqConnectionView"/>
+    <subComponentViewArch requiredInterfaceView="//@diagramArch/@requiredInterfaceViewArch.5 //@diagramArch/@requiredInterfaceViewArch.6 //@diagramArch/@requiredInterfaceViewArch.7" x="213" y="374" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.2" subComponent="//@versionedItem.0/@architecture/@subComponent.3" provConnectionView="//@diagramArch/@providedInterfaceViewArch.2/@provConnectionView" reqConnectionView="//@diagramArch/@requiredInterfaceViewArch.5/@reqConnectionView //@diagramArch/@requiredInterfaceViewArch.6/@reqConnectionView //@diagramArch/@requiredInterfaceViewArch.7/@reqConnectionView"/>
+    <subComponentViewArch x="787" y="712" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.3" subComponent="//@versionedItem.0/@architecture/@subComponent.4" provConnectionView="//@diagramArch/@providedInterfaceViewArch.3/@provConnectionView"/>
+    <subComponentViewArch requiredInterfaceView="//@diagramArch/@requiredInterfaceViewArch.8 //@diagramArch/@requiredInterfaceViewArch.9 //@diagramArch/@requiredInterfaceViewArch.10 //@diagramArch/@requiredInterfaceViewArch.11" x="1250" y="192" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.4" subComponent="//@versionedItem.0/@architecture/@subComponent.5" provConnectionView="//@diagramArch/@providedInterfaceViewArch.4/@provConnectionView" reqConnectionView="//@diagramArch/@requiredInterfaceViewArch.8/@reqConnectionView //@diagramArch/@requiredInterfaceViewArch.9/@reqConnectionView //@diagramArch/@requiredInterfaceViewArch.10/@reqConnectionView //@diagramArch/@requiredInterfaceViewArch.11/@reqConnectionView"/>
+    <subComponentViewArch requiredInterfaceView="//@diagramArch/@requiredInterfaceViewArch.12" x="329" y="185" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.5" subComponent="//@versionedItem.0/@architecture/@subComponent.6" provConnectionView="//@diagramArch/@providedInterfaceViewArch.5/@provConnectionView" reqConnectionView="//@diagramArch/@requiredInterfaceViewArch.12/@reqConnectionView"/>
+    <subComponentViewArch requiredInterfaceView="//@diagramArch/@requiredInterfaceViewArch.13" x="667" y="162" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.6" subComponent="//@versionedItem.0/@architecture/@subComponent.7" provConnectionView="//@diagramArch/@providedInterfaceViewArch.6/@provConnectionView" reqConnectionView="//@diagramArch/@requiredInterfaceViewArch.13/@reqConnectionView"/>
+    <subComponentViewArch requiredInterfaceView="//@diagramArch/@requiredInterfaceViewArch.14" x="991" y="33" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.7" subComponent="//@versionedItem.0/@architecture/@subComponent.8" provConnectionView="//@diagramArch/@providedInterfaceViewArch.7/@provConnectionView" reqConnectionView="//@diagramArch/@requiredInterfaceViewArch.14/@reqConnectionView"/>
+    <subComponentViewArch requiredInterfaceView="//@diagramArch/@requiredInterfaceViewArch.15" x="931" y="244" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.8" subComponent="//@versionedItem.0/@architecture/@subComponent.9" provConnectionView="//@diagramArch/@providedInterfaceViewArch.8/@provConnectionView" reqConnectionView="//@diagramArch/@requiredInterfaceViewArch.15/@reqConnectionView"/>
+    <subComponentViewArch requiredInterfaceView="//@diagramArch/@requiredInterfaceViewArch.16" x="780" y="425" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.9" subComponent="//@versionedItem.0/@architecture/@subComponent.10" provConnectionView="//@diagramArch/@providedInterfaceViewArch.9/@provConnectionView" reqConnectionView="//@diagramArch/@requiredInterfaceViewArch.16/@reqConnectionView"/>
+    <subComponentViewArch requiredInterfaceView="//@diagramArch/@requiredInterfaceViewArch.17" x="1159" y="684" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.10" subComponent="//@versionedItem.0/@architecture/@subComponent.11" provConnectionView="//@diagramArch/@providedInterfaceViewArch.10/@provConnectionView" reqConnectionView="//@diagramArch/@requiredInterfaceViewArch.17/@reqConnectionView"/>
+    <subComponentViewArch requiredInterfaceView="//@diagramArch/@requiredInterfaceViewArch.18" x="328" y="295" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.11" subComponent="//@versionedItem.0/@architecture/@subComponent.12" provConnectionView="//@diagramArch/@providedInterfaceViewArch.11/@provConnectionView" reqConnectionView="//@diagramArch/@requiredInterfaceViewArch.18/@reqConnectionView"/>
+    <subComponentViewArch requiredInterfaceView="//@diagramArch/@requiredInterfaceViewArch.19" x="205" y="692" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.12" subComponent="//@versionedItem.0/@architecture/@subComponent.13" provConnectionView="//@diagramArch/@providedInterfaceViewArch.12/@provConnectionView" reqConnectionView="//@diagramArch/@requiredInterfaceViewArch.19/@reqConnectionView"/>
+    <subComponentViewArch requiredInterfaceView="//@diagramArch/@requiredInterfaceViewArch.20" x="1072" y="504" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.13" subComponent="//@versionedItem.0/@architecture/@subComponent.14" provConnectionView="//@diagramArch/@providedInterfaceViewArch.13/@provConnectionView" reqConnectionView="//@diagramArch/@requiredInterfaceViewArch.20/@reqConnectionView"/>
+    <subComponentViewArch requiredInterfaceView="//@diagramArch/@requiredInterfaceViewArch.21" x="340" y="552" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.14" subComponent="//@versionedItem.0/@architecture/@subComponent.15" provConnectionView="//@diagramArch/@providedInterfaceViewArch.14/@provConnectionView" reqConnectionView="//@diagramArch/@requiredInterfaceViewArch.21/@reqConnectionView"/>
+    <subComponentViewArch requiredInterfaceView="//@diagramArch/@requiredInterfaceViewArch.22" x="961" y="596" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.15" subComponent="//@versionedItem.0/@architecture/@subComponent.16" provConnectionView="//@diagramArch/@providedInterfaceViewArch.15/@provConnectionView" reqConnectionView="//@diagramArch/@requiredInterfaceViewArch.22/@reqConnectionView"/>
+    <subComponentViewArch requiredInterfaceView="//@diagramArch/@requiredInterfaceViewArch.23" x="158" y="22" providedInterfaceViewArch="//@diagramArch/@providedInterfaceViewArch.16" subComponent="//@versionedItem.0/@architecture/@subComponent.17" provConnectionView="//@diagramArch/@providedInterfaceViewArch.16/@provConnectionView" reqConnectionView="//@diagramArch/@requiredInterfaceViewArch.23/@reqConnectionView"/>
+  </diagramArch>
+</fenix:Model>

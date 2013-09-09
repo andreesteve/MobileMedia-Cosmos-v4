@@ -1,6 +1,5 @@
 package br.unicamp.ic.sed.mobilemedia.impl.photo.impl;
 
-import br.unicamp.ic.sed.cosmos.IManager;
 import br.unicamp.ic.sed.mobilemedia.impl.photo.spec.req.IExceptionHandler;
 
 class Handler {

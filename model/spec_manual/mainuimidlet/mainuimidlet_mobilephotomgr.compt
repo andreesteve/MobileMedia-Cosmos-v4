@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:componenteditordiagram="http://componenteditordiagram" xmlns:fenix="http://fenix">
+  <fenix:Model>
+    <versionedItem xsi:type="fenix:ComponentSpecification" description="mainuimidlet_mobilephotomgr" component="/0/@softwareComponent.0" architecturalRole="CONNECTOR">
+      <externalProperty xsi:type="fenix:ProvidedInterface">
+        <type href="../mobilephotomgr/interfaces/IMobileResources.iface#/0/@interfaceType.0"/>
+      </externalProperty>
+      <externalProperty xsi:type="fenix:RequiredInterface">
+        <type href="interfaces/IMobileResources.iface#/0/@interfaceType.0"/>
+      </externalProperty>
+    </versionedItem>
+    <softwareComponent specification="/0/@versionedItem.0"/>
+  </fenix:Model>
+  <componenteditordiagram:DiagramComp>
+    <componentSpecificationViewComp reqConnectionViewComp="/1/@reqConnectionViewComp.0" provConnectionViewComp="/1/@provConnectionViewComp.0" x="200" y="100" componentSpecification="/0/@versionedItem.0"/>
+    <reqConnectionViewComp componentSpecificationViewComp="/1/@componentSpecificationViewComp.0" requiredInterfaceViewComp="/1/@requiredInterfaceViewComp.0"/>
+    <provConnectionViewComp componentSpecificationViewComp="/1/@componentSpecificationViewComp.0" providedInterfaceViewComp="/1/@providedInterfaceViewComp.0"/>
+    <requiredInterfaceViewComp x="400" y="100" reqConnectionViewComp="/1/@reqConnectionViewComp.0" requiredInterface="/0/@versionedItem.0/@externalProperty.1"/>
+    <providedInterfaceViewComp x="50" y="100" provConnectionViewComp="/1/@provConnectionViewComp.0" providedInterface="/0/@versionedItem.0/@externalProperty.0"/>
+  </componenteditordiagram:DiagramComp>
+</xmi:XMI>

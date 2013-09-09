@@ -10,7 +10,6 @@ package br.unicamp.ic.sed.mobilemedia.impl.mobilephonemgr.impl;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Vector;
-import br.unicamp.ic.sed.cosmos.IManager;
 import br.unicamp.ic.sed.mobilemedia.impl.mobilephonemgr.spec.req.IAlbum;
 import br.unicamp.ic.sed.mobilemedia.impl.mobilephonemgr.spec.req.IFilesystem;
 import br.unicamp.ic.sed.mobilemedia.impl.mobilephonemgr.spec.req.IMobileResources;

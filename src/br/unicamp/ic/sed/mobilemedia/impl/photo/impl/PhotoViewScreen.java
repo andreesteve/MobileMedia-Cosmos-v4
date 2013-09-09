@@ -2,8 +2,6 @@
  */
 
 package br.unicamp.ic.sed.mobilemedia.impl.photo.impl;
-import javax.microedition.lcdui.Alert;
-import javax.microedition.lcdui.AlertType;
 import javax.microedition.lcdui.Canvas;
 import javax.microedition.lcdui.Command;
 import javax.microedition.lcdui.Graphics;

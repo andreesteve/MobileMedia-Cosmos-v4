@@ -23,8 +23,6 @@ import br.unicamp.ic.sed.mobilemedia.impl.photo.spec.excep.PersistenceMechanismE
 import br.unicamp.ic.sed.mobilemedia.impl.photo.spec.excep.UnavailablePhotoAlbumException;
 import br.unicamp.ic.sed.mobilemedia.impl.photo.spec.req.IMobilePhone;
 
-import br.unicamp.ic.sed.cosmos.IManager;
-
 //import br.unicamp.ic.sed.mobilemedia.album.impl.AlbumListScreen;
 
  abstract class AbstractController implements CommandListener, ControllerInterface {

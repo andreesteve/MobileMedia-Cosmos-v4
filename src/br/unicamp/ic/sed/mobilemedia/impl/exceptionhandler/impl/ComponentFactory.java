@@ -1,7 +1,5 @@
 package br.unicamp.ic.sed.mobilemedia.impl.exceptionhandler.impl;
 
-import br.unicamp.ic.sed.cosmos.IManager;
-
 
 
 public class ComponentFactory {

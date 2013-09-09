@@ -2,7 +2,6 @@ package br.unicamp.ic.sed.mobilemedia.impl.album.impl;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Vector;
-import br.unicamp.ic.sed.cosmos.IManager;
 import br.unicamp.ic.sed.mobilemedia.impl.album.spec.req.ControllerInterface;
 import br.unicamp.ic.sed.mobilemedia.impl.album.spec.req.IExceptionHandler;
 import br.unicamp.ic.sed.mobilemedia.impl.album.spec.req.IFilesystem;

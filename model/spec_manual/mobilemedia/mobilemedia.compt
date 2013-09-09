@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:componenteditordiagram="http://componenteditordiagram" xmlns:fenix="http://fenix">
+  <fenix:Model>
+    <versionedItem xsi:type="fenix:ComponentSpecification" description="mobilemedia" component="/0/@softwareComponent.0"/>
+    <softwareComponent specification="/0/@versionedItem.0"/>
+  </fenix:Model>
+  <componenteditordiagram:DiagramComp>
+    <componentSpecificationViewComp x="200" y="100" componentSpecification="/0/@versionedItem.0"/>
+  </componenteditordiagram:DiagramComp>
+</xmi:XMI>

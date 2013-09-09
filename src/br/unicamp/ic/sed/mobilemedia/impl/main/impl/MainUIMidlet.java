@@ -4,8 +4,6 @@ import javax.microedition.midlet.MIDlet;
 import javax.microedition.midlet.MIDletStateChangeException;
 
 import br.unicamp.ic.sed.mobilemedia.impl.main.spec.prov.IMobileResources;
-import br.unicamp.ic.sed.mobilemedia.impl.mobilephonemgr.spec.prov.IMobilePhone;
-import br.unicamp.ic.sed.mobilemedia.impl.mobilephonemgr.spec.req.IAlbum;
 
 
 //Following are pre-processor statements to include the required

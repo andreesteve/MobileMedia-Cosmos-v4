@@ -16,7 +16,6 @@ import javax.microedition.lcdui.Display;
 import javax.microedition.lcdui.Displayable;
 import javax.microedition.midlet.MIDlet;
 
-import br.unicamp.ic.sed.cosmos.IManager;
 import br.unicamp.ic.sed.mobilemedia.impl.album.spec.excep.InvalidPhotoAlbumNameException;
 import br.unicamp.ic.sed.mobilemedia.impl.album.spec.excep.PersistenceMechanismException;
 import br.unicamp.ic.sed.mobilemedia.impl.album.spec.req.IPhoto;

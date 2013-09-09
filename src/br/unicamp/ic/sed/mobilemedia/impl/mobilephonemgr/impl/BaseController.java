@@ -11,7 +11,6 @@ package br.unicamp.ic.sed.mobilemedia.impl.mobilephonemgr.impl;
 import javax.microedition.lcdui.Command;
 import javax.microedition.midlet.MIDlet;
 
-import br.unicamp.ic.sed.cosmos.IManager;
 import br.unicamp.ic.sed.mobilemedia.impl.mobilephonemgr.spec.req.IAlbum;
 import br.unicamp.ic.sed.mobilemedia.impl.mobilephonemgr.spec.req.IMobileResources;
 

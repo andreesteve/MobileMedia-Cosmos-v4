@@ -2,7 +2,6 @@ package br.unicamp.ic.sed.mobilemedia.impl.main.impl;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Vector;
-import br.unicamp.ic.sed.cosmos.IManager;
 class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 	Hashtable requiredInterfaces = new Hashtable();
 	Hashtable providedInterfaces = new Hashtable();

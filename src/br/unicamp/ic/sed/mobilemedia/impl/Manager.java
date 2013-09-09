@@ -1,15 +1,5 @@
 package br.unicamp.ic.sed.mobilemedia.impl;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.Vector;
-import br.unicamp.ic.sed.cosmos.IManager;
-import br.unicamp.ic.sed.mobilemedia.impl.album.spec.req.ControllerInterface;
-import br.unicamp.ic.sed.mobilemedia.impl.album.spec.req.IExceptionHandler;
-import br.unicamp.ic.sed.mobilemedia.impl.album.spec.req.IFilesystem;
 import br.unicamp.ic.sed.mobilemedia.impl.album.spec.req.IMobilePhone;
-import br.unicamp.ic.sed.mobilemedia.impl.album.spec.req.IMobileResources;
-import br.unicamp.ic.sed.mobilemedia.impl.album.spec.req.IPhoto;
-import br.unicamp.ic.sed.mobilemedia.impl.mobilephonemgr.spec.req.IAlbum;
 class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 		
 	public Manager()
