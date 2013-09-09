@@ -1,10 +1,15 @@
-package br.unicamp.ic.sed.mobilemedia.impl.mainuimidlet_photo.impl;
-import java.util.*;
+package br.unicamp.ic.sed.mobilemedia.impl.exceptionhandler_album.impl;
+import java.util.Enumeration;
+import java.util.Hashtable;
+import java.util.Vector;
 class Manager extends br.unicamp.ic.sed.cosmos.AManager{
-	private Hashtable reqInterfaceMap = new Hashtable();
+	Hashtable reqInterfaceMap = new Hashtable();
+	Hashtable provInterfaceMap = new Hashtable();
+	
+	
 	public String[] getProvidedInterfaces(){
 	   Vector provInterfaceList = new Vector();
-	  provInterfaceList.addElement("IMobileResources");
+	  provInterfaceList.addElement("IAdapterAlbumEH");
 	     
 	   
 	   return convertListToArray(provInterfaceList.elements());
@@ -16,11 +21,8 @@ class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 	}
 	
 	public Object getProvidedInterface(String name){
-	   if (name.equals("IMobileResources")){
-	   		return new IMobileResourcesAdapter();
-	   } 
-	   
-	   return null;
+		return this.provInterfaceMap.get( name );
+	  
 	}
 	
 	public void setRequiredInterface(String name, Object adapter){
@@ -46,8 +48,8 @@ class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 public Manager()
 {
     // provided interfaces
-	setProvidedInterface("IMobileResources", new IMobileResourcesAdapter());
+	setProvidedInterface("IExceptionHandler", new IAdapterAlbumEH());
     // required interfaces
-	setRequiredInterfaceType("IMobileResources", br.unicamp.ic.sed.mobilemedia.impl.mainuimidlet.spec.prov.IMobileResources.class);
+	setRequiredInterfaceType("IExceptionHandler", br.unicamp.ic.sed.mobilemedia.impl.exceptionhandler.spec.prov.IExceptionHandler.class);
 }
 }

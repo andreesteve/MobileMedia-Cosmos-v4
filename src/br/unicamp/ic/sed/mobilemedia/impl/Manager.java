@@ -6,13 +6,13 @@ class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 	{
 	
 		// create all imanagers
-		br.unicamp.ic.sed.cosmos.IManager mainMidlet = br.unicamp.ic.sed.mobilemedia.impl.main.impl.ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager mainMidlet = br.unicamp.ic.sed.mobilemedia.impl.mainuimidlet.impl.ComponentFactory.createInstance();
 		
 		br.unicamp.ic.sed.cosmos.IManager filesystem = br.unicamp.ic.sed.mobilemedia.impl.filesystemmgr.impl.ComponentFactory.createInstance();
 
-		br.unicamp.ic.sed.cosmos.IManager album_mobilePhone = br.unicamp.ic.sed.mobilemedia.impl.album_mobilephonemgr.impl.ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager album_mobilePhone = br.unicamp.ic.sed.mobilemedia.impl.album_mobilephotomgr.impl.ComponentFactory.createInstance();
 
-		br.unicamp.ic.sed.cosmos.IManager mobilePhone = br.unicamp.ic.sed.mobilemedia.impl.mobilephonemgr.impl.ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager mobilePhone = br.unicamp.ic.sed.mobilemedia.impl.mobilephotomgr.impl.ComponentFactory.createInstance();
 
 		br.unicamp.ic.sed.cosmos.IManager album = br.unicamp.ic.sed.mobilemedia.impl.album.impl.ComponentFactory.createInstance();
 
@@ -22,11 +22,11 @@ class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 		
 		br.unicamp.ic.sed.cosmos.IManager photo = br.unicamp.ic.sed.mobilemedia.impl.photo.impl.ComponentFactory.createInstance();
 		
-		br.unicamp.ic.sed.cosmos.IManager photo_mobilePhone = br.unicamp.ic.sed.mobilemedia.impl.photo_mobilephonemgr.impl.ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager photo_mobilePhone = br.unicamp.ic.sed.mobilemedia.impl.photo_mobilephotomgr.impl.ComponentFactory.createInstance();
 		
 		br.unicamp.ic.sed.cosmos.IManager mainMidlet_photo = br.unicamp.ic.sed.mobilemedia.impl.mainuimidlet_photo.impl.ComponentFactory.createInstance();
 		
-		br.unicamp.ic.sed.cosmos.IManager mainMidlet_mobilePhone = br.unicamp.ic.sed.mobilemedia.impl.mainuimidlet_mobilephonemgr.impl.ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager mainMidlet_mobilePhone = br.unicamp.ic.sed.mobilemedia.impl.mainuimidlet_mobilephotomgr.impl.ComponentFactory.createInstance();
 		
 		br.unicamp.ic.sed.cosmos.IManager filesystemmgr_album = br.unicamp.ic.sed.mobilemedia.impl.filesystemmgr_album.impl.ComponentFactory.createInstance();
 		
@@ -34,11 +34,11 @@ class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 		
 		br.unicamp.ic.sed.cosmos.IManager photo_album = br.unicamp.ic.sed.mobilemedia.impl.photo_album.impl.ComponentFactory.createInstance();
 		
-		br.unicamp.ic.sed.cosmos.IManager mainMidlet_exceptionHandler = br.unicamp.ic.sed.mobilemedia.impl.mainuimidlet_exceptionhandler.impl.ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager mainMidlet_exceptionHandler = br.unicamp.ic.sed.mobilemedia.impl.exceptionhandler_mainuimidlet.impl.ComponentFactory.createInstance();
 		
-		br.unicamp.ic.sed.cosmos.IManager album_exceptionhandler = br.unicamp.ic.sed.mobilemedia.impl.album_exceptionhandler.impl.ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager album_exceptionhandler = br.unicamp.ic.sed.mobilemedia.impl.exceptionhandler_album.impl.ComponentFactory.createInstance();
 		
-		br.unicamp.ic.sed.cosmos.IManager photo_exceptionhandler = br.unicamp.ic.sed.mobilemedia.impl.photo_exceptionhandler.impl.ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager photo_exceptionhandler = br.unicamp.ic.sed.mobilemedia.impl.exceptionhandler_photo.impl.ComponentFactory.createInstance();
 		
 		/*********************************************************************************************/
 		//setting required interfaces

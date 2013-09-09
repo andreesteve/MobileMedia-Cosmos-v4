@@ -1,5 +1,7 @@
-package br.unicamp.ic.sed.mobilemedia.impl.mainuimidlet_photo.impl;
-import java.util.*;
+package br.unicamp.ic.sed.mobilemedia.impl.exceptionhandler_mainuimidlet.impl;
+import java.util.Enumeration;
+import java.util.Hashtable;
+import java.util.Vector;
 class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 	private Hashtable reqInterfaceMap = new Hashtable();
 	public String[] getProvidedInterfaces(){
